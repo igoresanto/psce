@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="COMUNI.aspx" />
     <Content Include="Padrao.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -137,6 +138,13 @@
     </Compile>
     <Compile Include="COMPA.aspx.designer.cs">
       <DependentUpon>COMPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COMUNI.aspx.cs">
+      <DependentUpon>COMUNI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COMUNI.aspx.designer.cs">
+      <DependentUpon>COMUNI.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
