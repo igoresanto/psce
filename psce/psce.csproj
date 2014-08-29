@@ -76,6 +76,7 @@
     <Content Include="AVATPA.aspx" />
     <Content Include="AVAUNI.aspx" />
     <Content Include="AVEXAMES.aspx" />
+    <Content Include="COMEXAME.aspx" />
     <Content Include="COMPA.aspx" />
     <Content Include="default.aspx" />
     <Content Include="img\logo.png" />
@@ -132,6 +133,13 @@
       <DependentUpon>AVEXAMES.aspx</DependentUpon>
     </Compile>
     <Compile Include="Banco\Banco.cs" />
+    <Compile Include="COMEXAME.aspx.cs">
+      <DependentUpon>COMEXAME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COMEXAME.aspx.designer.cs">
+      <DependentUpon>COMEXAME.aspx</DependentUpon>
+    </Compile>
     <Compile Include="COMPA.aspx.cs">
       <DependentUpon>COMPA.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
