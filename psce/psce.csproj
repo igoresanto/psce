@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Padrao.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,9 +66,88 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AVACOF.aspx" />
+    <Content Include="AVACONSULTAS.aspx" />
+    <Content Include="AVATPA.aspx" />
+    <Content Include="AVAUNI.aspx" />
+    <Content Include="AVEXAMES.aspx" />
+    <Content Include="COMPA.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\seta.png" />
+    <Content Include="multselect\chosen-sprite%402x.png" />
+    <Content Include="multselect\chosen-sprite.png" />
+    <Content Include="multselect\chosen.css" />
+    <Content Include="multselect\chosen.jquery.js" />
+    <Content Include="multselect\chosen.jquery.min.js" />
+    <Content Include="multselect\chosen.min.css" />
+    <Content Include="multselect\chosen.proto.js" />
+    <Content Include="multselect\chosen.proto.min.js" />
+    <Content Include="multselect\jquery.min.6.js" />
+    <Content Include="multselect\jquery.min.js" />
+    <Content Include="multselect\prism.css" />
+    <Content Include="multselect\prism.js" />
+    <Content Include="SQL\Inserir_Setor.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AVACOF.aspx.cs">
+      <DependentUpon>AVACOF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AVACOF.aspx.designer.cs">
+      <DependentUpon>AVACOF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AVACONSULTAS.aspx.cs">
+      <DependentUpon>AVACONSULTAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AVACONSULTAS.aspx.designer.cs">
+      <DependentUpon>AVACONSULTAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AVATPA.aspx.cs">
+      <DependentUpon>AVATPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AVATPA.aspx.designer.cs">
+      <DependentUpon>AVATPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AVAUNI.aspx.cs">
+      <DependentUpon>AVAUNI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AVAUNI.aspx.designer.cs">
+      <DependentUpon>AVAUNI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AVEXAMES.aspx.cs">
+      <DependentUpon>AVEXAMES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AVEXAMES.aspx.designer.cs">
+      <DependentUpon>AVEXAMES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Banco\Banco.cs" />
+    <Compile Include="COMPA.aspx.cs">
+      <DependentUpon>COMPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COMPA.aspx.designer.cs">
+      <DependentUpon>COMPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Padrao.Master.cs">
+      <DependentUpon>Padrao.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Padrao.Master.designer.cs">
+      <DependentUpon>Padrao.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
