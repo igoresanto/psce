@@ -66,8 +66,12 @@
     <Content Include="COMUNI.aspx" />
     <Content Include="Padrao.Master" />
     <Content Include="Documentação\MODELO SISTEMA SATISFAÇÃO DO CLIENTE EXTERNO.xlsx" />
-    <Content Include="SQL\PSCE.mwb" />
-    <Content Include="SQL\PSCE.mwb.bak" />
+    <Content Include="SQL\PSCE.mwb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SQL\PSCE.mwb.bak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
