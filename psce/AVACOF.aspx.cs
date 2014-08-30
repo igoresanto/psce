@@ -142,6 +142,7 @@ namespace PSCE
         protected void BtSalvar_Click(object sender, EventArgs e)
         {
             db.sql("INSERT INTO `fcof` (`Paciente`,`Acompanhante`,`Telefone`,`Email`,`DataUtili`,`DataHora`,`Registro`,`Prontuario`,`RTQ1`,`RTQ2`,`RTQ3`,`AMQ1`,`AMQ2`,`AMQ3`,`AMQ4`,`QUEM`,`PORQUE`,`IMQ4`,`TR`,`Relato`,`OA`,`FBC`,`Prioridade`,`Anexo_idAnexo`) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "'," + Q1() + "," + Q2() + "," + Q3() + "," + Q4() + "," + Q5() + "," + Q18() + "," + Q19() + ",'" + TextBox9.Text + "','" + TextBox10.Text + "'," + Q20() + "," + Q21() + ",'" + TextBox11.Text + "'," + Q22() + "," + Q23() + "," + Q24() + ",1)");
+            Response.Redirect("AvaliacaoAtendimento.aspx");
         }
     }
 }

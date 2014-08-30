@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AvaliacaoAtendimento.aspx" />
     <Content Include="COMUNI.aspx" />
     <Content Include="Padrao.Master" />
     <Content Include="Documentação\MODELO SISTEMA SATISFAÇÃO DO CLIENTE EXTERNO.xlsx" />
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="AVACONSULTAS.aspx.designer.cs">
       <DependentUpon>AVACONSULTAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AvaliacaoAtendimento.aspx.cs">
+      <DependentUpon>AvaliacaoAtendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AvaliacaoAtendimento.aspx.designer.cs">
+      <DependentUpon>AvaliacaoAtendimento.aspx</DependentUpon>
     </Compile>
     <Compile Include="AVATPA.aspx.cs">
       <DependentUpon>AVATPA.aspx</DependentUpon>
