@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Padrao.Master" AutoEventWireup="true" CodeBehind="AVATPA.aspx.cs" Inherits="PSCE.AVATPA" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <link rel="stylesheet" href="multselect/chosen.css">
+  <link rel="stylesheet" href="multselect/chosen.css" />
     <style type="text/css">
         .auto-style2 {
             width: 797px;

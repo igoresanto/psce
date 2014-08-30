@@ -1,9 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Padrao.Master" AutoEventWireup="true" CodeBehind="AVACOF.aspx.cs" Inherits="PSCE.AVACOF" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="js/select2.css" rel="stylesheet" />
-    <script src="js/select2.js"></script> 
-    <script>
-        $(document).ready(function () { $("#e1").select2({ placeholder: "Selecione o setor" }); });
+
+  <link rel="stylesheet" href="multselect/chosen.css" />
+<script src="multselect/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#ContentPlaceHolder2_TextBox12").hide("slow");
+        $("#ContentPlaceHolder2_TextBox13").hide("slow");
+        $("#RRPSelect").change(function () {
+            $("#ContentPlaceHolder2_TextBox12").val($("#RRPSelect").val());
+        });
+        $("#SCSelect").change(function () {
+            $("#ContentPlaceHolder2_TextBox13").val($("#SCSelect").val());
+        });
+    });
 </script>
     <style type="text/css">
         .auto-style2 {
@@ -51,6 +61,7 @@
         AVALIAÇÃO DE ATENDIMENTO - FINANCEIRO</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <asp:Button ID="BtSalvar" runat="server" Text="Salvar" OnClick="BtSalvar_Click" />
 <table width="846" cellpadding="0" cellspacing="0" style="background-color:white;">
   <tr>
             <td class="auto-style2"  style="text-align:center;background-color:rgb(0,125,125);">
@@ -201,20 +212,43 @@
                 <td colspan="3"><asp:RadioButton ID="Q24B" GroupName="Q24" runat="server" />Baixa </td>
                 </tr>
                 <tr>
-                <td><B>Prioridade:</B></td>
+                <td><B>Reportar reclamação para:</B></td>
                 <td colspan="5"> 
-    <select multiple id="e1">
-        <option value="AL1">Alabama1</option>
-        <option value="AL2">Alabama2</option>
-        <option value="AL3">Alabama3</option>
-        <option value="AL5">Alabama4</option>
-        <option value="WY">Wyoming</option>
-    </select>
+                    
+<select name="RRPSelect" id="RRPSelect" multiple="multiple" class="chosen-select" style="width:600px;" tabindex="4" data-placeholder="Selecione os setores...">
+    <asp:Label ID="itmsrrp" runat="server" Text=""></asp:Label>
+</select><br />
+                    <asp:TextBox ID="TextBox12" runat="server" Visible="True"></asp:TextBox>
+</td>
+                </tr>
+                <tr>
+                <td><B>Setores cientes:</B></td>
+                <td colspan="5"> 
+                    
+<select name="SCSelect" id="SCSelect" multiple="multiple" class="chosen-select" style="width:600px;" tabindex="4" data-placeholder="Selecione os setores...">
+    <asp:Label ID="itmscs" runat="server" Text="" ></asp:Label>
+</select><br />
+                    <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
 </td>
                 </tr>
                 </table>
         </td>
     </tr>
   </table>
+  <script src="multselect/jquery.min.6.js" type="text/javascript"></script>
+  <script src="multselect/chosen.jquery.js" type="text/javascript"></script>
+  <script src="multselect/prism.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+      var config = {
+          '.chosen-select': {},
+          '.chosen-select-deselect': { allow_single_deselect: true },
+          '.chosen-select-no-single': { disable_search_threshold: 10 },
+          '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
+          '.chosen-select-width': { width: "95%" }
+      }
+      for (var selector in config) {
+          $(selector).chosen(config[selector]);
+      }
+  </script>
 </asp:Content>
 
