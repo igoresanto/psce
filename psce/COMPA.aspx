@@ -1072,4 +1072,116 @@
             <td class="auto-style30" colspan="2" width="180">Insatisfação</td>
         </tr>
     </table>
+
+    <br />
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:504pt" width="670">
+        <colgroup>
+            <col span="3" width="71" />
+            <col width="89" />
+            <col width="90" />
+            <col width="98" />
+            <col span="2" width="90" />
+        </colgroup>
+        <tr height="33">
+            <td class="auto-style32" colspan="8" height="33" width="670">Ambiente</td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style11" colspan="3" height="33" width="213">Itens Avaliados</td>
+            <td class="auto-style36">Encantado</td>
+            <td class="auto-style13" width="90">Muito Satisfeito</td>
+            <td class="auto-style14" width="98">Satisfeito</td>
+            <td class="auto-style15" width="90">Insatisfeito</td>
+            <td class="auto-style15" width="90">Muito Insatisfeito</td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style33" colspan="3" height="33" width="213">Organização do consultório</td>
+            <td class="auto-style37">
+                <asp:Label ID="lblAMBIen1" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style19" width="90">
+                <asp:Label ID="lblAMBIms1" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style20" width="98">
+                <asp:Label ID="lblAMBIs1" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style19" width="90">
+                <asp:Label ID="lblAMBIins1" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style19" width="90">
+                <asp:Label ID="lblAMBImins1" runat="server" Text="1"></asp:Label>
+            </td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style33" colspan="3" height="33" width="213">Acomodação do paciente</td>
+            <td class="auto-style38">
+                <asp:Label ID="lblAMBIen2" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMBIms2" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style23" width="98">
+                <asp:Label ID="lblAMBIs2" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMBIins2" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style24" width="90">
+                <asp:Label ID="lblAMBImins2" runat="server" Text="1"></asp:Label>
+            </td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style33" colspan="3" height="33" width="213">Higiene e Limpeza</td>
+            <td class="auto-style38">
+                <asp:Label ID="lblAMBIen3" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90" id="lblAMBIms3">
+                <asp:Label ID="lblAMBIms3" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style23" width="98">
+                <asp:Label ID="lblAMBIs3" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMBIins3" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style24" width="90">
+                <asp:Label ID="lblAMBImins3" runat="server" Text="1"></asp:Label>
+            </td>
+        </tr>
+         <tr height="33">
+            <td class="auto-style33" colspan="3" height="33" width="213">Ruído</td>
+            <td class="auto-style38">
+                <asp:Label ID="lblAMBIen4" runat="server" Text="5"></asp:Label>
+             </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMBIms4" runat="server" Text="4"></asp:Label>
+             </td>
+            <td class="auto-style23" width="98">
+                <asp:Label ID="lblAMBIs4" runat="server" Text="3"></asp:Label>
+             </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMBIins4" runat="server" Text="2"></asp:Label>
+             </td>
+            <td class="auto-style24" width="90">
+                <asp:Label ID="lblAMBImins4" runat="server" Text="1"></asp:Label>
+             </td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style34" colspan="3" height="74" rowspan="2" width="213">Resultado</td>
+            <td class="auto-style26" colspan="2">
+                <asp:Label ID="lblAMBImediaS" runat="server" Text="Média"></asp:Label>
+            </td>
+            <td class="auto-style23" width="98">
+                <asp:Label ID="lblAMBImediaOM" runat="server" Text="Média"></asp:Label>
+            </td>
+            <td class="auto-style27" colspan="2" width="180">
+                <asp:Label ID="lblAMBImediaINS" runat="server" Text="Média"></asp:Label>
+            </td>
+        </tr>
+        <tr height="41">
+            <td class="auto-style35" colspan="2" height="41">Satisfação</td>
+            <td class="auto-style29" width="98">Oportunidade de Melhoria</td>
+            <td class="auto-style30" colspan="2" width="180">Insatisfação</td>
+        </tr>
+    </table>
 </asp:Content>
