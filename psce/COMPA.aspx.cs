@@ -241,6 +241,27 @@ namespace PSCE
             lblAMBImediaS.Text = (mediaAMBIsat1 + mediaAMBIsat2 + mediaAMBIsat3 + mediaAMBIsat4 + mediaAMBIsat5 + + mediaAMBIsat7 / 4).ToString();
             lblAMBImediaOM.Text = (mediaAMBIom + mediaAMBIom1 + mediaAMBIBom2 + mediaAMBIBom3 / 4).ToString();
             lblAMBImediaINS.Text = (mediaAMBIinsat1 + mediaAMBIinsat2 + mediaAMBIinsat3 + mediaAMBIinsat4 + mediaAMBIinsat5 + mediaAMBIinsat6 + mediaAMBIinsat7 / 4).ToString();
+            //Infra e manutenção
+            //Linha 1
+            DataTable INFEncantado1 = bd.lista("SELECT count(*) FROM `fpa` WHERE IMQ1 = 5 ");
+            lblINFen1.Text = INFEncantado1.Rows[0][0].ToString();
+            DataTable INFMSatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE IMQ1 = 4 ");
+            lblINFms1.Text = INFMSatisfeito1.Rows[0][0].ToString();
+            DataTable INFSatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE IMQ1 = 3 ");
+            lblINFs1.Text = INFSatisfeito1.Rows[0][0].ToString();
+            DataTable INFInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE IMQ1 = 2 ");
+            lblINFins1.Text = INFInsatisfeito1.Rows[0][0].ToString();
+            DataTable INFMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE IMQ1 = 1 ");
+            lblINFmins1.Text = INFMInsatisfeito1.Rows[0][0].ToString();
+            //Media
+            int mediaINFsat1 = Convert.ToInt32(INFEncantado1.Rows[0][0].ToString());
+            int mediaINFsat2 = Convert.ToInt32(INFMSatisfeito1.Rows[0][0].ToString());
+            int mediaINFom = Convert.ToInt32(INFSatisfeito1.Rows[0][0].ToString());
+            int mediaINFinsat1 = Convert.ToInt32(INFInsatisfeito1.Rows[0][0].ToString());
+            int mediaINFinsat2 = Convert.ToInt32(INFMInsatisfeito1.Rows[0][0].ToString());
+            lblINFmediaS.Text = (mediaINFsat1 + mediaINFsat2 ).ToString();
+            lblINFmediaOM.Text = (mediaINFom).ToString();
+            lblINFmediaINS.Text = (mediaINFinsat1 + mediaINFinsat2 ).ToString();
        //FIM
 
         
