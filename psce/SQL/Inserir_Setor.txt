@@ -513,3 +513,6 @@ INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('41','TEL Telefonia')
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('42','UNI Unidade de Internação');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('43','UPGQ Unidade de Padronização e Gestão da Qualidade');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('44','US Ultrassom');
+
+ALTER TABLE `PSCE`.`FCONS` 
+ADD COLUMN `ARQ1` INT(11) NOT NULL AFTER `Prontuario`
