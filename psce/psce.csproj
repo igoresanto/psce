@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AvaliacaoAtendimento.aspx" />
+    <Content Include="CadastroUsuario.aspx" />
     <Content Include="COMUNI.aspx" />
     <Content Include="Padrao.Master" />
     <Content Include="Documentação\MODELO SISTEMA SATISFAÇÃO DO CLIENTE EXTERNO.xlsx" />
@@ -142,6 +143,13 @@
       <DependentUpon>AVEXAMES.aspx</DependentUpon>
     </Compile>
     <Compile Include="Banco\Banco.cs" />
+    <Compile Include="CadastroUsuario.aspx.cs">
+      <DependentUpon>CadastroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroUsuario.aspx.designer.cs">
+      <DependentUpon>CadastroUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="COMEXAME.aspx.cs">
       <DependentUpon>COMEXAME.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

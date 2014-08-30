@@ -520,3 +520,47 @@ INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('41','TEL Telefonia')
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('42','UNI Unidade de Internação');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('43','UPGQ Unidade de Padronização e Gestão da Qualidade');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('44','US Ultrassom');
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`Usuario` (
+  `idUsuario` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `Nome` VARCHAR(80) NOT NULL,
+  `Telefone` VARCHAR(80) NULL DEFAULT NULL,
+  `E-mail` VARCHAR(80) NULL DEFAULT NULL,
+  `Usuario` VARCHAR(45) NOT NULL,
+  `Senha` VARCHAR(45) NOT NULL,
+  `Tipo` CHAR NOT NULL,
+  `Situacao` INT(11) NOT NULL,
+  PRIMARY KEY (`idUsuario`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`Usuario_setor` (
+  `idUsuario_setor` INT(11) NOT NULL,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  `Setores_idSetores` INT(11) ZEROFILL NOT NULL,
+  PRIMARY KEY (`idUsuario_setor`),
+  INDEX `fk_Usuario_setor_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  INDEX `fk_Usuario_setor_Setores1_idx` (`Setores_idSetores` ASC),
+  CONSTRAINT `fk_Usuario_setor_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Usuario_setor_Setores1`
+    FOREIGN KEY (`Setores_idSetores`)
+    REFERENCES `PSCE`.`Setores` (`idSetores`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
