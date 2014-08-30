@@ -143,6 +143,50 @@ namespace PSCE
             lblAMmediaS.Text = (mediaAMsat1 + mediaAMsat2 + mediaAMsat3 + mediaAMsat4 + mediaAMsat5 + mediaAMsat6 / 3).ToString();
             lblAMmediaOM.Text = (mediaAMom + mediaAMom1 + mediaAMom2 / 3).ToString();
             lblAMmediaINS.Text = (mediaAMinsat1 + mediaAMinsat2 + mediaAMinsat3 + mediaAMinsat4 + mediaAMinsat5 + mediaAMinsat6 / 3).ToString();
+            //Enfermagem
+            //Linha 1
+            DataTable ENFEncantado1 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ1 = 5 ");
+            lblENFen1.Text = ENFEncantado1.Rows[0][0].ToString();
+            DataTable ENFMSatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ1 = 4 ");
+            lblENFms1.Text = ENFMSatisfeito1.Rows[0][0].ToString();
+            DataTable ENFSatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ1 = 3 ");
+            lblENFs1.Text = ENFSatisfeito1.Rows[0][0].ToString();
+            DataTable ENFInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ1 = 2 ");
+            lblENFins1.Text = ENFInsatisfeito1.Rows[0][0].ToString();
+            DataTable ENFMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ1 = 1 ");
+            lblENFmins1.Text = ENFMInsatisfeito1.Rows[0][0].ToString();
+            //Linha 2
+            DataTable ENFEncantado2 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ2 = 5 ");
+            lblENFen2.Text = ENFEncantado2.Rows[0][0].ToString();
+            DataTable ENFMSatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ2 = 4 ");
+            lblENFms2.Text = ENFMSatisfeito2.Rows[0][0].ToString();
+            DataTable ENFSatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ2 = 3 ");
+            lblENFs2.Text = ENFSatisfeito2.Rows[0][0].ToString();
+            DataTable ENFInsatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ2 = 2 ");
+            lblENFins2.Text = ENFInsatisfeito2.Rows[0][0].ToString();
+            DataTable ENFMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ2 = 1 ");
+            lblENFmins2.Text = ENFMInsatisfeito2.Rows[0][0].ToString();
+            //Linha 3
+            DataTable ENFEncantado3 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ3 = 5 ");
+            lblENFen3.Text = ENFEncantado3.Rows[0][0].ToString();
+            DataTable ENFMSatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ3 = 4 ");
+            lblENFms3.Text = ENFMSatisfeito3.Rows[0][0].ToString();
+            DataTable ENFSatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ3 = 3 ");
+            lblENFs3.Text = ENFSatisfeito3.Rows[0][0].ToString();
+            DataTable ENFInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ3 = 2 ");
+            lblENFins3.Text = ENFInsatisfeito3.Rows[0][0].ToString();
+            DataTable ENFMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ3 = 1 ");
+            lblENFmins3.Text = ENFMInsatisfeito3.Rows[0][0].ToString();
+            //Média
+            int mediaENFsat1 = Convert.ToInt32(ENFEncantado1.Rows[0][0].ToString()), mediaENFsat2 = Convert.ToInt32(ENFEncantado2.Rows[0][0].ToString()), mediaENFsat3 = Convert.ToInt32(ENFEncantado3.Rows[0][0].ToString());
+            int mediaENFsat4 = Convert.ToInt32(ENFMSatisfeito1.Rows[0][0].ToString()), mediaENFsat5 = Convert.ToInt32(ENFMSatisfeito2.Rows[0][0].ToString()), mediaENFsat6 = Convert.ToInt32(ENFMSatisfeito3.Rows[0][0].ToString());
+            int mediaENFom = Convert.ToInt32(ENFSatisfeito1.Rows[0][0].ToString()), mediaENFom1 = Convert.ToInt32(ENFSatisfeito2.Rows[0][0].ToString()), mediaENFom2 = Convert.ToInt32(ENFSatisfeito3.Rows[0][0].ToString());
+            int mediaENFinsat1 = Convert.ToInt32(ENFInsatisfeito1.Rows[0][0].ToString()), mediaENFinsat2 = Convert.ToInt32(ENFInsatisfeito2.Rows[0][0].ToString()), mediaENFinsat3 = Convert.ToInt32(ENFInsatisfeito3.Rows[0][0].ToString());
+            int mediaENFinsat4 = Convert.ToInt32(ENFMInsatisfeito1.Rows[0][0].ToString()), mediaENFinsat5 = Convert.ToInt32(ENFMInsatisfeito2.Rows[0][0].ToString()), mediaENFinsat6 = Convert.ToInt32(ENFMInsatisfeito3.Rows[0][0].ToString());
+            lblENFmediaS.Text = (mediaENFsat1 + mediaENFsat2 + mediaENFsat3 + mediaENFsat4 + mediaENFsat5 + mediaENFsat6 / 3).ToString();
+            lblENFmediaOM.Text = (mediaENFom + mediaENFom1 + mediaENFom2 / 3).ToString();
+            lblENFmediaINS.Text = (mediaENFinsat1 + mediaENFinsat2 + mediaENFinsat3 + mediaENFinsat4 + mediaENFinsat5 + mediaENFinsat6 / 3).ToString();
+
         
         }
     }
