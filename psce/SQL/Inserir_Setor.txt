@@ -298,11 +298,16 @@ CREATE TABLE IF NOT EXISTS `PSCE`.`FCONS` (
   `DataHora` DATETIME NOT NULL,
   `Registro` VARCHAR(45) NOT NULL,
   `Prontuario` VARCHAR(45) NOT NULL,
+  `ARQ1` INT(11) NOT NULL,
   `MAQ1` INT(11) NOT NULL,
   `MAQ2` INT(11) NOT NULL,
   `MAQ3` INT(11) NOT NULL,
+  `MAQ4` INT(11) NOT NULL,
   `REQ1` INT(11) NOT NULL,
   `REQ2` INT(11) NOT NULL,
+  `AT1` INT(11) NOT NULL,
+  `AT2` INT(11) NOT NULL,
+  `AT3` INT(11) NOT NULL,
   `REQ3` INT(11) NOT NULL,
   `ENQ1` INT(11) NOT NULL,
   `ENQ2` INT(11) NOT NULL,
@@ -395,6 +400,7 @@ CREATE TABLE IF NOT EXISTS `PSCE`.`FEXA` (
   `REEQ1` INT(11) NOT NULL,
   `REEQ2` INT(11) NOT NULL,
   `REEQ3` INT(11) NOT NULL,
+  `REEQ4` INT(11) NOT NULL,
   `AMQ1` INT(11) NOT NULL,
   `AMQ2` INT(11) NOT NULL,
   `AMQ3` INT(11) NOT NULL,
@@ -469,6 +475,7 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 
+
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('1','AMB Ambulatório Pediatria');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('2','BC Bloco Cirúrgico');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('3','CAF Central de Abastecimento Farmacêutico');
@@ -513,22 +520,3 @@ INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('41','TEL Telefonia')
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('42','UNI Unidade de Internação');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('43','UPGQ Unidade de Padronização e Gestão da Qualidade');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('44','US Ultrassom');
-
-ALTER TABLE `PSCE`.`FCONS` 
-ADD COLUMN `ARQ1` INT(11) NOT NULL AFTER `Prontuario`
-
-
-
--------------------------------------------------------------
-
-ALTER TABLE `PSCE`.`FEXA` 
-ADD COLUMN `REEQ4` INT(11) NOT NULL AFTER `REEQ3`
-
-ALTER TABLE `PSCE`.`FCONS` 
-ADD COLUMN `MAQ4` INT(11) NOT NULL AFTER `MAQ3`
-
-
-ALTER TABLE `PSCE`.`FCONS` 
-ADD COLUMN `AT1` INT(11) NOT NULL AFTER `REQ2`,
-ADD COLUMN `AT2` INT(11) NOT NULL AFTER `AT1`,
-ADD COLUMN `AT3` INT(11) NOT NULL AFTER `AT2`
