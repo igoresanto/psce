@@ -261,6 +261,17 @@ namespace PSCE
         protected void BtSalvar_Click(object sender, EventArgs e)
         {
             db.sql("INSERT INTO `fpa` (`Paciente`,`Acompanhante`,`Telefone`,`Email`,`DataUtili`,`DataHora`,`Registro`,`Prontuario`,`CRQ1`,`CRQ2`,`CRQ3`,`RQ1`,`RQ2`,`RQ3`,`AMQ1`,`AMQ2`,`AMQ3`,`ENQ1`,`ENQ2`,`ENQ3`,`AQ1`,`AQ2`,`AQ3`,`AQ4`,`IMQ1`,`IMQ2`,`IMQ3`,`QUEM`,`PORQUE`,`IMQ4`,`TR`,`Relato`,`OA`,`FBC`,`Prioridade`,`Anexo`) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "'," + Q1() + "," + Q2() + "," + Q3() + "," + Q4() + "," + Q5() + "," + Q6() + "," + Q7() + "," + Q8() + "," + Q9() + "," + Q10() + "," + Q11() + "," + Q12() + "," + Q13() + "," + Q14() + "," + Q15() + "," + Q16() + "," + Q17() + "," + Q18() + "," + Q19() + ",'" + TextBox9.Text + "','" + TextBox10.Text + "'," + Q20() + "," + Q21() + ",'" + TextBox11.Text + "'," + Q22() + "," + Q23() + "," + Q24() + ",1)");
+            string idav = db.lista("SELECT MAX(idFPA) FROM psce.fpa;").Rows[0][0].ToString();
+            string[] rrp = TextBox12.Text.Split(',');
+            foreach (string Setor in rrp)
+            {
+                db.sql("INSERT INTO `psce`.`fpa_rrp`(`FPA_idFPA`,`Setores_idSetores`) VALUES("+idav+","+Setor+");");
+            }
+            string[] SC = TextBox13.Text.Split(',');
+            foreach (string Setor in SC)
+            {
+                db.sql("INSERT INTO `psce`.`fpa_SC`(`FPA_idFPA`,`Setores_idSetores`) VALUES(" + idav + "," + Setor + ");");
+            }
             Response.Redirect("AvaliacaoAtendimento.aspx");
         }
     }

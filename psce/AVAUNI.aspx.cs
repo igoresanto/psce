@@ -320,6 +320,17 @@ namespace PSCE
         protected void Bt_salvar_Click(object sender, EventArgs e)
         {
             db.sql("INSERT INTO `fui`(`Paciente`,`Acompanhante`,`Telefone`,`Email`,`DataUtili`,`DataHora`,`Registro`,`Prontuario`,`RIQ1`,`RIQ2`,`RIQ3`,`AMQ1`,`AMQ2`,`AMQ3`,`ENQ1`,`ENQ2`,`ENQ3`,`ROQ1`,`ROQ2`,`ROQ3`,`ALQ1`,`ALQ2`,`ALQ3`,`ALQ4`,`ALQ5`,`ABQ1`,`ABQ2`,`ABQ3`,`IMQ1`,`IMQ2`,`IMQ3`,`IMQ4`,`IMQ5`,`QUEM`,`PORQUE`,`IMQ6`,`IMQ7`,`Relato`,`OA`,`FBC`,`Prioridade`) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "'," + Q1() + "," + Q2() + "," + Q3() + "," + Q4() + "," + Q5() + "," + Q6() + "," + Q7() + "," + Q8() + "," + Q9() + "," + Q10() + "," + Q11() + "," + Q12() + "," + Q13() + "," + Q14() + "," + Q15() + "," + Q16() + "," + Q25() + "," + Q26() + "," + Q27() + "," + Q28() + "," + Q17() + "," + Q29() + "," + Q30() + "," + Q18() + "," + Q19() + ",'" + TextBox9.Text + "','" + TextBox10.Text + "'," + Q20() + "," + Q21() + ",'" + TextBox11.Text + "'," + Q22() + "," + Q23() + "," + Q24() + ");");
+            string idav = db.lista("SELECT MAX(idFUI) FROM psce.fui;").Rows[0][0].ToString();
+            string[] rrp = TextBox12.Text.Split(',');
+            foreach (string Setor in rrp)
+            {
+                db.sql("INSERT INTO `psce`.`fui_rrp`(`FUI_idFUI`,`Setores_idSetores`) VALUES(" + idav + "," + Setor + ");");
+            }
+            string[] SC = TextBox13.Text.Split(',');
+            foreach (string Setor in SC)
+            {
+                db.sql("INSERT INTO `psce`.`fui_SC`(`FUI_idFUI`,`Setores_idSetores`) VALUES(" + idav + "," + Setor + ");");
+            }
             Response.Redirect("AvaliacaoAtendimento.aspx");
         }
     }
