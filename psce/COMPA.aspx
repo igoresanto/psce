@@ -584,6 +584,69 @@
             padding: 0px;
             background: #33CC33;
         }
+        .auto-style36 {
+            color: windowtext;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            border-left: .5pt solid gray;
+            border-right: .5pt solid gray;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: .5pt solid gray;
+            padding: 0px;
+            background: #BFBFBF;
+        }
+        .auto-style37 {
+            color: windowtext;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            border: .5pt solid gray;
+            padding: 0px;
+            background: #F2F2F2;
+        }
+        .auto-style38 {
+            color: black;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Aharoni;
+            text-align: left;
+            vertical-align: middle;
+            white-space: nowrap;
+            border: .5pt solid gray;
+            padding: 0px;
+            background: #F2F2F2;
+        }
+        .auto-style39 {
+            color: black;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Aharoni;
+            text-align: left;
+            vertical-align: middle;
+            white-space: nowrap;
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            padding: 0px;
+            background: #F2F2F2;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -806,4 +869,112 @@
         </tr>
     </table>
   
+
+
+
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:504pt" width="670">
+        <colgroup>
+            <col span="3" width="71" />
+            <col width="89" />
+            <col width="90" />
+            <col width="98" />
+            <col span="2" width="90" />
+        </colgroup>
+        <tr height="43">
+            <td class="auto-style9" colspan="8" height="43" width="670">Atendimento Médico</td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style11" colspan="3" height="33" width="213">Itens Avaliados</td>
+            <td class="auto-style36">Encantado</td>
+            <td class="auto-style13" width="90">Muito Satisfeito</td>
+            <td class="auto-style14" width="98">Satisfeito</td>
+            <td class="auto-style15" width="90">Insatisfeito</td>
+            <td class="auto-style15" width="90">Muito Insatisfeito</td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style17" colspan="3" height="33" width="213">Cordialidade no atendimento</td>
+            <td class="auto-style37">
+                <asp:Label ID="lblAMen1" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style19" width="90">
+                <asp:Label ID="lblAMms1" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style20" width="98">
+                <asp:Label ID="lblAMs1" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style19" width="90">
+                <asp:Label ID="lblAMins1" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style19" width="90">
+                <asp:Label ID="lblAMmins1" runat="server" Text="1"></asp:Label>
+            </td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style17" colspan="3" height="33" width="213">Clareza nas informações</td>
+            <td class="auto-style38">
+                <asp:Label ID="lblAMen2" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMms2" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style23" width="98">
+                <asp:Label ID="lblAMs2" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMins2" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style24" width="90">
+                <asp:Label ID="lblAMmins2" runat="server" Text="1"></asp:Label>
+            </td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style17" colspan="3" height="33" width="213">Tempo de espera para o atendimento quanto a sua classificação de risco</td>
+            <td class="auto-style38">
+                <asp:Label ID="lblAMen3" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMms3" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style23" width="98">
+                <asp:Label ID="lblAMs3" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style22" width="90">
+                <asp:Label ID="lblAMins3" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style24" width="90">
+                <asp:Label ID="lblAMmins3" runat="server" Text="1"></asp:Label>
+            </td>
+        </tr>
+        <tr height="33">
+            <td class="auto-style25" colspan="3" height="76" rowspan="2" width="213">Resultado</td>
+            <td class="auto-style26" colspan="2">
+                <asp:Label ID="lblAMmediaS" runat="server" Text="Média"></asp:Label>
+            </td>
+            <td class="auto-style23" width="98">
+                <asp:Label ID="lblAMmediaOM" runat="server" Text="Média"></asp:Label>
+            </td>
+            <td class="auto-style27" colspan="2" width="180">
+                <asp:Label ID="lblAMmediaINS" runat="server" Text="Média"></asp:Label>
+            </td>
+        </tr>
+        <tr height="43">
+            <td class="auto-style28" colspan="2" height="43">Satisfação</td>
+            <td class="auto-style29" width="98">Oportunidade de Melhoria</td>
+            <td class="auto-style30" colspan="2" width="180">Insatisfação</td>
+        </tr>
+        <tr height="21">
+            <td class="auto-style31" height="21" width="71">&nbsp;</td>
+            <td class="auto-style4" width="71">&nbsp;</td>
+            <td class="auto-style4" width="71">&nbsp;</td>
+            <td class="auto-style39">&nbsp;</td>
+            <td class="auto-style6" width="90">&nbsp;</td>
+            <td class="auto-style7" width="98">&nbsp;</td>
+            <td class="auto-style6" width="90">&nbsp;</td>
+            <td class="auto-style8" width="90">&nbsp;</td>
+        </tr>
+    </table>
 </asp:Content>

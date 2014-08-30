@@ -100,6 +100,49 @@ namespace PSCE
             lblRmediaS.Text = (mediarsat1 + mediarsat2 + mediarsat3 + mediarsat4 + mediarsat5 + mediarsat6 / 3).ToString();
             lblRmediaOM.Text = (mediarom + mediarom1 + mediarom2 / 3).ToString();
             lblRmediaIS.Text = (mediarinsat1 + mediarinsat2 + mediarinsat3 + mediarinsat4 + mediarinsat5 + mediarinsat6 / 3).ToString();
+            //Atendimento Medico
+            //Linha 1
+            DataTable AMEncantado1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ1 = 5 ");
+            lblAMen1.Text = AMEncantado1.Rows[0][0].ToString();
+            DataTable AMMSatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ1 = 4 ");
+            lblAMms1.Text = AMMSatisfeito1.Rows[0][0].ToString();
+            DataTable AMSatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ1 = 3 ");
+            lblAMs1.Text = AMSatisfeito1.Rows[0][0].ToString();
+            DataTable AMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ1 = 2 ");
+            lblAMins1.Text = AMInsatisfeito1.Rows[0][0].ToString();
+            DataTable AMMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ1 = 1 ");
+            lblAMmins1.Text = AMMInsatisfeito1.Rows[0][0].ToString();
+            //Linha 2
+            DataTable AMEncantado2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ2 = 5 ");
+            lblAMen2.Text = AMEncantado2.Rows[0][0].ToString();
+            DataTable AMMSatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ2 = 4 ");
+            lblAMms2.Text = AMMSatisfeito2.Rows[0][0].ToString();
+            DataTable AMSatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ2 = 3 ");
+            lblAMs2.Text = AMSatisfeito2.Rows[0][0].ToString();
+            DataTable AMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ2 = 2 ");
+            lblAMins2.Text = AMInsatisfeito2.Rows[0][0].ToString();
+            DataTable AMMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ2 = 1 ");
+            lblAMmins2.Text = AMMInsatisfeito2.Rows[0][0].ToString();
+            //Linha 3
+            DataTable AMEncantado3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ3 = 5 ");
+            lblAMen3.Text = AMEncantado3.Rows[0][0].ToString();
+            DataTable AMMSatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ3 = 4 ");
+            lblAMms3.Text = AMMSatisfeito3.Rows[0][0].ToString();
+            DataTable AMSatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ3 = 3 ");
+            lblAMs3.Text = AMSatisfeito3.Rows[0][0].ToString();
+            DataTable AMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ3 = 2 ");
+            lblAMins3.Text = AMInsatisfeito3.Rows[0][0].ToString();
+            DataTable AMMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ3 = 1 ");
+            lblAMmins3.Text = AMMInsatisfeito3.Rows[0][0].ToString();
+            //Media
+            int mediaAMsat1 = Convert.ToInt32(AMEncantado1.Rows[0][0].ToString()), mediaAMsat2 = Convert.ToInt32(AMEncantado2.Rows[0][0].ToString()), mediaAMsat3 = Convert.ToInt32(AMEncantado3.Rows[0][0].ToString());
+            int mediaAMsat4 = Convert.ToInt32(AMMSatisfeito1.Rows[0][0].ToString()), mediaAMsat5 = Convert.ToInt32(AMMSatisfeito2.Rows[0][0].ToString()), mediaAMsat6 = Convert.ToInt32(AMMSatisfeito3.Rows[0][0].ToString());
+            int mediaAMom = Convert.ToInt32(AMSatisfeito1.Rows[0][0].ToString()), mediaAMom1 = Convert.ToInt32(AMSatisfeito2.Rows[0][0].ToString()), mediaAMom2 = Convert.ToInt32(AMSatisfeito3.Rows[0][0].ToString());
+            int mediaAMinsat1 = Convert.ToInt32(AMInsatisfeito1.Rows[0][0].ToString()), mediaAMinsat2 = Convert.ToInt32(AMInsatisfeito2.Rows[0][0].ToString()), mediaAMinsat3 = Convert.ToInt32(AMInsatisfeito3.Rows[0][0].ToString());
+            int mediaAMinsat4 = Convert.ToInt32(AMMInsatisfeito1.Rows[0][0].ToString()), mediaAMinsat5 = Convert.ToInt32(AMMInsatisfeito2.Rows[0][0].ToString()), mediaAMinsat6 = Convert.ToInt32(AMMInsatisfeito3.Rows[0][0].ToString());
+            lblAMmediaS.Text = (mediaAMsat1 + mediaAMsat2 + mediaAMsat3 + mediaAMsat4 + mediaAMsat5 + mediaAMsat6 / 3).ToString();
+            lblAMmediaOM.Text = (mediaAMom + mediaAMom1 + mediaAMom2 / 3).ToString();
+            lblAMmediaINS.Text = (mediaAMinsat1 + mediaAMinsat2 + mediaAMinsat3 + mediaAMinsat4 + mediaAMinsat5 + mediaAMinsat6 / 3).ToString();
         
         }
     }
