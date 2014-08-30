@@ -186,6 +186,62 @@ namespace PSCE
             lblENFmediaS.Text = (mediaENFsat1 + mediaENFsat2 + mediaENFsat3 + mediaENFsat4 + mediaENFsat5 + mediaENFsat6 / 3).ToString();
             lblENFmediaOM.Text = (mediaENFom + mediaENFom1 + mediaENFom2 / 3).ToString();
             lblENFmediaINS.Text = (mediaENFinsat1 + mediaENFinsat2 + mediaENFinsat3 + mediaENFinsat4 + mediaENFinsat5 + mediaENFinsat6 / 3).ToString();
+            //Ambiente
+            //Linha 1
+            DataTable AMBIEncantado1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ1 = 5 ");
+            lblAMBIen1.Text = AMBIEncantado1.Rows[0][0].ToString();
+            DataTable AMBIMSatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ1 = 4 ");
+            lblAMBIms1.Text = AMBIMSatisfeito1.Rows[0][0].ToString();
+            DataTable AMBISatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ1 = 3 ");
+            lblAMBIs1.Text = AMBISatisfeito1.Rows[0][0].ToString();
+            DataTable AMBIInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ1 = 2 ");
+            lblAMBIins1.Text = AMBIInsatisfeito1.Rows[0][0].ToString();
+            DataTable AMBIMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ1 = 1 ");
+            lblAMBImins1.Text = AMBIMInsatisfeito1.Rows[0][0].ToString();
+            //Linha 2
+            DataTable AMBIEncantado2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ2 = 5 ");
+            lblAMBIen2.Text = AMBIEncantado2.Rows[0][0].ToString();
+            DataTable AMBIMSatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ2 = 4 ");
+            lblAMBIms2.Text = AMBIMSatisfeito2.Rows[0][0].ToString();
+            DataTable AMBISatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ2 = 3 ");
+            lblAMBIs2.Text = AMBISatisfeito2.Rows[0][0].ToString();
+            DataTable AMBIInsatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ2 = 2 ");
+            lblAMBIins2.Text = AMBIInsatisfeito2.Rows[0][0].ToString();
+            DataTable AMBIMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ2 = 1 ");
+            lblAMBImins2.Text = AMBIMInsatisfeito2.Rows[0][0].ToString();
+            //Linha 3
+            DataTable AMBIEncantado3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ3 = 5 ");
+            lblAMBIen3.Text = AMBIEncantado3.Rows[0][0].ToString();
+            DataTable AMBIMSatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ3 = 4 ");
+            lblAMBIms3.Text = AMBIMSatisfeito3.Rows[0][0].ToString();
+            DataTable AMBISatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ3 = 3 ");
+            lblAMBIs3.Text = AMBISatisfeito3.Rows[0][0].ToString();
+            DataTable AMBIInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ3 = 2 ");
+            lblAMBIins3.Text = AMBIInsatisfeito3.Rows[0][0].ToString();
+            DataTable AMBIMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ3 = 1 ");
+            lblAMBImins3.Text = AMBIMInsatisfeito3.Rows[0][0].ToString();
+            //Linha 4
+            DataTable AMBIEncantado4 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ4 = 5 ");
+            lblAMBIen4.Text = AMBIEncantado4.Rows[0][0].ToString();
+            DataTable AMBIMSatisfeito4 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ4 = 4 ");
+            lblAMBIms4.Text = AMBIMSatisfeito4.Rows[0][0].ToString();
+            DataTable AMBISatisfeito4 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ4 = 3 ");
+            lblAMBIs4.Text = AMBISatisfeito4.Rows[0][0].ToString();
+            DataTable AMBIInsatisfeito4 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ4 = 2 ");
+            lblAMBIins4.Text = AMBIInsatisfeito4.Rows[0][0].ToString();
+            DataTable AMBIMInsatisfeito4 = bd.lista("SELECT count(*) FROM `fpa` WHERE AQ4 = 1 ");
+            lblAMBImins4.Text = AMBIMInsatisfeito4.Rows[0][0].ToString();
+
+            //Media
+            int mediaAMBIsat1 = Convert.ToInt32(AMBIEncantado1.Rows[0][0].ToString()), mediaAMBIsat2 = Convert.ToInt32(AMBIEncantado2.Rows[0][0].ToString()), mediaAMBIsat3 = Convert.ToInt32(AMBIEncantado3.Rows[0][0].ToString());
+            int mediaAMBIsat4 = Convert.ToInt32(AMBIMSatisfeito1.Rows[0][0].ToString()), mediaAMBIsat5 = Convert.ToInt32(AMBIMSatisfeito2.Rows[0][0].ToString()), mediaAMBIsat6 = Convert.ToInt32(AMBIMSatisfeito3.Rows[0][0].ToString()), mediaAMBIsat7 = Convert.ToInt32(AMBIMSatisfeito4.Rows[0][0].ToString());
+            int mediaAMBIom = Convert.ToInt32(AMBISatisfeito1.Rows[0][0].ToString()), mediaAMBIom1 = Convert.ToInt32(AMBISatisfeito2.Rows[0][0].ToString()), mediaAMBIBom2 = Convert.ToInt32(AMBISatisfeito3.Rows[0][0].ToString()), mediaAMBIBom3 = Convert.ToInt32(AMBISatisfeito4.Rows[0][0].ToString());
+            int mediaAMBIinsat1 = Convert.ToInt32(AMBIInsatisfeito1.Rows[0][0].ToString()), mediaAMBIinsat2 = Convert.ToInt32(AMBIInsatisfeito2.Rows[0][0].ToString()), mediaAMBIinsat3 = Convert.ToInt32(AMBIInsatisfeito3.Rows[0][0].ToString());
+            int mediaAMBIinsat4 = Convert.ToInt32(AMBIMInsatisfeito1.Rows[0][0].ToString()), mediaAMBIinsat5 = Convert.ToInt32(AMBIMInsatisfeito2.Rows[0][0].ToString()), mediaAMBIinsat6 = Convert.ToInt32(AMBIMInsatisfeito3.Rows[0][0].ToString()), mediaAMBIinsat7 = Convert.ToInt32(AMBIMInsatisfeito4.Rows[0][0].ToString());
+            lblAMBImediaS.Text = (mediaAMBIsat1 + mediaAMBIsat2 + mediaAMBIsat3 + mediaAMBIsat4 + mediaAMBIsat5 + + mediaAMBIsat7 / 4).ToString();
+            lblAMBImediaOM.Text = (mediaAMBIom + mediaAMBIom1 + mediaAMBIBom2 + mediaAMBIBom3 / 4).ToString();
+            lblAMBImediaINS.Text = (mediaAMBIinsat1 + mediaAMBIinsat2 + mediaAMBIinsat3 + mediaAMBIinsat4 + mediaAMBIinsat5 + mediaAMBIinsat6 + mediaAMBIinsat7 / 4).ToString();
+       //FIM
 
         
         }
