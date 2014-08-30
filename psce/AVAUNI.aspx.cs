@@ -333,5 +333,10 @@ namespace PSCE
             }
             Response.Redirect("AvaliacaoAtendimento.aspx");
         }
+
+        protected void TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

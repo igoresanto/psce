@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Padrao.Master" AutoEventWireup="true" CodeBehind="AVATPA.aspx.cs" Inherits="PSCE.AVATPA" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <link rel="stylesheet" href="multselect/chosen.css" />
+    <link rel="stylesheet" href="multselect/chosen.css" />
     <style type="text/css">
         .auto-style2 {
             width: 797px;
@@ -74,10 +74,10 @@
         <table width="100%"><tr><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style3" >Telefone</td><td class="auto-style6"><asp:TextBox ID="TextBox3"  runat="server" Width="100%"></asp:TextBox></td><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style4">  &nbsp;&nbsp;  E-mail</td><td><asp:TextBox ID="TextBox4"  runat="server" Width="100%"></asp:TextBox></td></tr></table>
         </td></tr>
     <tr><td>
-        <table width="100%"><tr><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style13" >Data da utilização do serviço</td><td class="auto-style14"><asp:TextBox ID="TextBox5"  runat="server" Width="100%"></asp:TextBox></td><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style5">  Data de registro da manifestação</td><td class="auto-style14"><asp:TextBox ID="TextBox6"  runat="server" Width="100%"></asp:TextBox></td></tr></table>
+        <table width="100%"><tr><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style13" >DaData da utilização do serviço</td><td class="auto-style14"><asp:TextBox ID="TextBox5"  runat="server" Width="100%" TextMode="Date"></asp:TextBox></td><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style5">  Data de registro da manifestação</td><td class="auto-style14"><asp:TextBox ID="TextBox6"  runat="server" Width="100%" Enabled="False"></asp:TextBox></td></tr></table>
         </td></tr>
     <tr><td>
-        <table width="100%"><tr><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style13" >Registro</td><td class="auto-style7"><asp:TextBox ID="TextBox7"  runat="server" Width="100%"></asp:TextBox></td><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style8">  &nbsp;&nbsp;  Prontuário</td><td class="auto-style14"><asp:TextBox ID="TextBox8"  runat="server" Width="100%"></asp:TextBox></td></tr></table>
+        <table width="100%"><tr><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style13" >Registrotd>d class="auto-style7"><asp:TextBox ID="TextBox7"  runat="server" Width="100%"></asp:TextBox></td><td style="font-family:'Arial Rounded MT';font-size:13px;font-weight:bold;" class="auto-style8">  &nbsp;&nbsp;  Prontuário</td><td class="auto-style14"><asp:TextBox ID="TextBox8"  runat="server" Width="100%"></asp:TextBox></td></tr></table>
         </td></tr>
     
     <tr>
