@@ -66,6 +66,8 @@
     <Content Include="COMUNI.aspx" />
     <Content Include="Padrao.Master" />
     <Content Include="Documentação\MODELO SISTEMA SATISFAÇÃO DO CLIENTE EXTERNO.xlsx" />
+    <Content Include="SQL\PSCE.mwb" />
+    <Content Include="SQL\PSCE.mwb.bak" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
