@@ -65,6 +65,7 @@
     <Content Include="CadastroUsuario.aspx" />
     <Content Include="COMUNI.aspx" />
     <Content Include="feedbackaocliente.aspx" />
+    <Content Include="FeedbackCOF.aspx" />
     <Content Include="Padrao.Master" />
     <Content Include="Documentação\MODELO SISTEMA SATISFAÇÃO DO CLIENTE EXTERNO.xlsx" />
     <Content Include="RelacoesUsuario.aspx" />
@@ -188,6 +189,13 @@
     </Compile>
     <Compile Include="feedbackaocliente.aspx.designer.cs">
       <DependentUpon>feedbackaocliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackCOF.aspx.cs">
+      <DependentUpon>FeedbackCOF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackCOF.aspx.designer.cs">
+      <DependentUpon>FeedbackCOF.aspx</DependentUpon>
     </Compile>
     <Compile Include="Padrao.Master.cs">
       <DependentUpon>Padrao.Master</DependentUpon>
