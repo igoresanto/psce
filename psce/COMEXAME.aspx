@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Padrao.Master" AutoEventWireup="true" CodeBehind="COMEXAME.aspx.cs" Inherits="psce.COMEXAME" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Padrao.Master" AutoEventWireup="true" CodeBehind="COMEXAME.aspx.cs" Inherits="PSCE.COMEXAME" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style2 {
@@ -365,33 +365,69 @@
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style8" colspan="3" height="33" width="213">Cordialidade no atendimento</td>
-            <td class="auto-style9">&nbsp;</td>
-            <td class="auto-style10" width="90">&nbsp;</td>
-            <td class="auto-style11" width="98">&nbsp;</td>
-            <td class="auto-style10" width="90">&nbsp;</td>
-            <td class="auto-style10" width="90">&nbsp;</td>
+            <td class="auto-style9">
+                <asp:Label ID="lblMEXen1" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style10" width="90">
+                <asp:Label ID="lblMEXms1" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style11" width="98">
+                <asp:Label ID="lblMEXs1" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style10" width="90">
+                <asp:Label ID="lblMEXins1" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style10" width="90">
+                <asp:Label ID="lblMEXmins1" runat="server" Text="1"></asp:Label>
+            </td>
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style8" colspan="3" height="33" width="213">Clareza nas informações</td>
-            <td class="auto-style12">&nbsp;</td>
-            <td class="auto-style13" width="90">&nbsp;</td>
-            <td class="auto-style14" width="98">&nbsp;</td>
-            <td class="auto-style13" width="90">&nbsp;</td>
-            <td class="auto-style15" width="90">&nbsp;</td>
+            <td class="auto-style12">
+                <asp:Label ID="lblMEXen2" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style13" width="90">
+                <asp:Label ID="lblMEXms2" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style14" width="98">
+                <asp:Label ID="lblMEXs2" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style13" width="90">
+                <asp:Label ID="lblMEXins2" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style15" width="90">
+                <asp:Label ID="lblMEXmins2" runat="server" Text="1"></asp:Label>
+            </td>
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style8" colspan="3" height="33" width="213">Tempo de espera</td>
-            <td class="auto-style12">&nbsp;</td>
-            <td class="auto-style13" width="90">&nbsp;</td>
-            <td class="auto-style14" width="98">&nbsp;</td>
-            <td class="auto-style13" width="90">&nbsp;</td>
-            <td class="auto-style15" width="90">&nbsp;</td>
+            <td class="auto-style12">
+                <asp:Label ID="lblMEXen3" runat="server" Text="5"></asp:Label>
+            </td>
+            <td class="auto-style13" width="90">
+                <asp:Label ID="lblMEXms3" runat="server" Text="4"></asp:Label>
+            </td>
+            <td class="auto-style14" width="98">
+                <asp:Label ID="lblMEXs3" runat="server" Text="3"></asp:Label>
+            </td>
+            <td class="auto-style13" width="90">
+                <asp:Label ID="lblMEXins3" runat="server" Text="2"></asp:Label>
+            </td>
+            <td class="auto-style15" width="90">
+                <asp:Label ID="lblMEXmins3" runat="server" Text="1"></asp:Label>
+            </td>
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style16" colspan="3" height="76" rowspan="2" width="213">Resultado</td>
-            <td class="auto-style17" colspan="2">&nbsp;</td>
-            <td class="auto-style14" width="98">&nbsp;</td>
-            <td class="auto-style18" colspan="2" width="180">&nbsp;</td>
+            <td class="auto-style17" colspan="2">
+                <asp:Label ID="lblMEXmediaS" runat="server" Text="Média"></asp:Label>
+            </td>
+            <td class="auto-style14" width="98">
+                <asp:Label ID="lblMEXmediaOM" runat="server" Text="Média"></asp:Label>
+            </td>
+            <td class="auto-style18" colspan="2" width="180">
+                <asp:Label ID="lblMEXmediaINS" runat="server" Text="Média"></asp:Label>
+            </td>
         </tr>
         <tr height="43" style="mso-height-source:userset;height:32.25pt">
             <td class="auto-style19" colspan="2" height="43">Satisfação</td>

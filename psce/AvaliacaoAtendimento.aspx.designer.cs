@@ -7,7 +7,7 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace psce {
+namespace PSCE {
     
     
     public partial class AvaliacaoAtendimento {

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace psce
+namespace PSCE
 {
     public partial class COMUNI : System.Web.UI.Page
     {
