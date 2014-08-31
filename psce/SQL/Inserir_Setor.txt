@@ -469,12 +469,177 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
+CREATE TABLE IF NOT EXISTS `PSCE`.`Usuario` (
+  `idUsuario` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `Nome` VARCHAR(80) NOT NULL,
+  `Telefone` VARCHAR(80) NULL DEFAULT NULL,
+  `E-mail` VARCHAR(80) NULL DEFAULT NULL,
+  `Usuario` VARCHAR(45) NOT NULL,
+  `Senha` VARCHAR(45) NOT NULL,
+  `Tipo` CHAR NOT NULL,
+  `Situacao` INT(11) NOT NULL,
+  PRIMARY KEY (`idUsuario`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`Usuario_setor` (
+  `idUsuario_setor` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  `Setores_idSetores` INT(11) ZEROFILL NOT NULL,
+  PRIMARY KEY (`idUsuario_setor`),
+  INDEX `fk_Usuario_setor_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  INDEX `fk_Usuario_setor_Setores1_idx` (`Setores_idSetores` ASC),
+  CONSTRAINT `fk_Usuario_setor_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Usuario_setor_Setores1`
+    FOREIGN KEY (`Setores_idSetores`)
+    REFERENCES `PSCE`.`Setores` (`idSetores`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`FeedbackFCOF` (
+  `idFeedback` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `FCOF_idFCOF` INT(11) ZEROFILL NOT NULL,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  `Procede` CHAR NOT NULL,
+  `DataHora` DATETIME NOT NULL,
+  `Resposta` VARCHAR(2048) NOT NULL,
+  `Aprovado` CHAR NULL DEFAULT NULL,
+  `Motivo` VARCHAR(2048) NULL DEFAULT NULL,
+  PRIMARY KEY (`idFeedback`),
+  INDEX `fk_FeedbackFCOF_FCOF1_idx` (`FCOF_idFCOF` ASC),
+  INDEX `fk_FeedbackFCOF_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  CONSTRAINT `fk_FeedbackFCOF_FCOF1`
+    FOREIGN KEY (`FCOF_idFCOF`)
+    REFERENCES `PSCE`.`FCOF` (`idFCOF`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_FeedbackFCOF_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`FeedbackFCONS` (
+  `idFeedbackFCONS` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `FCONS_idFCONS` INT(11) ZEROFILL NOT NULL,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  `Procede` CHAR NOT NULL,
+  `DataHora` DATETIME NOT NULL,
+  `Resposta` VARCHAR(2048) NOT NULL,
+  `Aprovado` CHAR NULL DEFAULT NULL,
+  `Motivo` VARCHAR(2048) NULL DEFAULT NULL,
+  PRIMARY KEY (`idFeedbackFCONS`),
+  INDEX `fk_FeedbackFCONS_FCONS1_idx` (`FCONS_idFCONS` ASC),
+  INDEX `fk_FeedbackFCONS_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  CONSTRAINT `fk_FeedbackFCONS_FCONS1`
+    FOREIGN KEY (`FCONS_idFCONS`)
+    REFERENCES `PSCE`.`FCONS` (`idFCONS`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_FeedbackFCONS_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`FeedbackFEXA` (
+  `idFeedbackFEXA` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `FEXA_idFEXA` INT(11) ZEROFILL NOT NULL,
+  `Procede` CHAR NOT NULL,
+  `DataHora` DATETIME NOT NULL,
+  `Resposta` VARCHAR(2048) NOT NULL,
+  `Aprovado` CHAR NULL DEFAULT NULL,
+  `Motivo` VARCHAR(2048) NULL DEFAULT NULL,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  PRIMARY KEY (`idFeedbackFEXA`),
+  INDEX `fk_FeedbackFEXA_FEXA1_idx` (`FEXA_idFEXA` ASC),
+  INDEX `fk_FeedbackFEXA_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  CONSTRAINT `fk_FeedbackFEXA_FEXA1`
+    FOREIGN KEY (`FEXA_idFEXA`)
+    REFERENCES `PSCE`.`FEXA` (`idFEXA`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_FeedbackFEXA_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`FeedbackFPA` (
+  `idFeedbackFPA` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  `FPA_idFPA` INT(11) ZEROFILL NOT NULL,
+  `Procede` CHAR NOT NULL,
+  `DataHora` DATETIME NOT NULL,
+  `Resposta` VARCHAR(2048) NOT NULL,
+  `Aprovado` CHAR NULL DEFAULT NULL,
+  `Motivo` VARCHAR(2048) NULL DEFAULT NULL,
+  PRIMARY KEY (`idFeedbackFPA`),
+  INDEX `fk_FeedbackFPA_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  INDEX `fk_FeedbackFPA_FPA1_idx` (`FPA_idFPA` ASC),
+  CONSTRAINT `fk_FeedbackFPA_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_FeedbackFPA_FPA1`
+    FOREIGN KEY (`FPA_idFPA`)
+    REFERENCES `PSCE`.`FPA` (`idFPA`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`FeedbackFUI` (
+  `idFeedbackFUI` INT(11) NOT NULL,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  `FUI_idFUI` INT(11) ZEROFILL NOT NULL,
+  `Procede` CHAR NOT NULL,
+  `DataHora` DATETIME NOT NULL,
+  `Resposta` VARCHAR(2048) NOT NULL,
+  `Aprovado` CHAR NULL DEFAULT NULL,
+  `Motivo` VARCHAR(2048) NULL DEFAULT NULL,
+  PRIMARY KEY (`idFeedbackFUI`),
+  INDEX `fk_FeedbackFUI_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  INDEX `fk_FeedbackFUI_FUI1_idx` (`FUI_idFUI` ASC),
+  CONSTRAINT `fk_FeedbackFUI_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_FeedbackFUI_FUI1`
+    FOREIGN KEY (`FUI_idFUI`)
+    REFERENCES `PSCE`.`FUI` (`idFUI`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-
+INSERT INTO `psce`.`anexo` (`Nome`, `Caminho`) VALUES ('asd', 'asda');
 
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('1','AMB Ambulatório Pediatria');
 INSERT INTO `psce`.`setores` (`idSetores`, `Nome`) VALUES ('2','BC Bloco Cirúrgico');
@@ -564,3 +729,33 @@ COLLATE = utf8_general_ci;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+ALTER TABLE `PSCE`.`Usuario_setor` 
+CHANGE COLUMN `idUsuario_setor` `idUsuario_setor` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT ;
+
+CREATE TABLE IF NOT EXISTS `PSCE`.`Feedback_FCOF` (
+  `idFeedback` INT(11) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `FCOF_idFCOF` INT(11) ZEROFILL NOT NULL,
+  `Usuario_idUsuario` INT(11) ZEROFILL NOT NULL,
+  `Procede` CHAR NOT NULL,
+  `DataHora` DATETIME NOT NULL,
+  `Resposta` VARCHAR(2048) NOT NULL,
+  `Aprovado` CHAR NULL DEFAULT NULL,
+  `Resposta` VARCHAR(2048) NULL DEFAULT NULL,
+  PRIMARY KEY (`idFeedback`),
+  INDEX `fk_Feedback_FCOF_Usuario1_idx` (`Usuario_idUsuario` ASC),
+  INDEX `fk_Feedback_FCOF_FCOF1_idx` (`FCOF_idFCOF` ASC),
+  CONSTRAINT `fk_Feedback_FCOF_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `PSCE`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Feedback_FCOF_FCOF1`
+    FOREIGN KEY (`FCOF_idFCOF`)
+    REFERENCES `PSCE`.`FCOF` (`idFCOF`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;

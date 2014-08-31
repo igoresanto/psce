@@ -243,8 +243,8 @@
             <td class="auto-style6" colspan="2" height="33" width="164">Situação</td>
             <td class="auto-style4" colspan="7" width="628">
                 <asp:DropDownList ID="DropDownList2" runat="server">
-                    <asp:ListItem Value="A">Ativo</asp:ListItem>
-                    <asp:ListItem Value="I">Inativo</asp:ListItem>
+                    <asp:ListItem Value="1">Ativo</asp:ListItem>
+                    <asp:ListItem Value="0">Inativo</asp:ListItem>
                 </asp:DropDownList>
             </td>
         </tr>

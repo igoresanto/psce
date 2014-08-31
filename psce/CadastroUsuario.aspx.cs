@@ -26,7 +26,15 @@ namespace PSCE
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            db.sql("INSERT INTO `psce`.`usuario`(`Nome`,`Telefone`,`E-mail`,`Usuario`,`Senha`,`Tipo`,`Situacao`) VALUES ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + DropDownList1.SelectedValue.ToString() + "','" + DropDownList2.SelectedValue.ToString() + "');");
+            string idav = db.lista("SELECT MAX(idUsuario) FROM psce.usuario;").Rows[0][0].ToString();
+            string[] rrp = TextBox12.Text.Split(',');
+            foreach (string Setor in rrp)
+            {
+                db.sql("INSERT INTO `psce`.`usuario_setor`(`Usuario_idUsuario`,`Setores_idSetores`) VALUES(" + idav + "," + Setor + ");");
+            }
            
+
         }
     }
 }

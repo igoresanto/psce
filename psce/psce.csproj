@@ -64,8 +64,13 @@
     <Content Include="AvaliacaoAtendimento.aspx" />
     <Content Include="CadastroUsuario.aspx" />
     <Content Include="COMUNI.aspx" />
+    <Content Include="feedbackaocliente.aspx" />
+    <Content Include="FeedbackCOF.aspx" />
     <Content Include="Padrao.Master" />
     <Content Include="Documentação\MODELO SISTEMA SATISFAÇÃO DO CLIENTE EXTERNO.xlsx" />
+    <Content Include="RelacoesUsuario.aspx" />
+    <Content Include="SQL\PSCE.mwb" />
+    <Content Include="SQL\PSCE.mwb.bak" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,6 +183,20 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="feedbackaocliente.aspx.cs">
+      <DependentUpon>feedbackaocliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedbackaocliente.aspx.designer.cs">
+      <DependentUpon>feedbackaocliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackCOF.aspx.cs">
+      <DependentUpon>FeedbackCOF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackCOF.aspx.designer.cs">
+      <DependentUpon>FeedbackCOF.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Padrao.Master.cs">
       <DependentUpon>Padrao.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -186,6 +205,13 @@
       <DependentUpon>Padrao.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelacoesUsuario.aspx.cs">
+      <DependentUpon>RelacoesUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelacoesUsuario.aspx.designer.cs">
+      <DependentUpon>RelacoesUsuario.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
