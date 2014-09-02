@@ -66,9 +66,11 @@
     <Content Include="COMUNI.aspx" />
     <Content Include="feedbackaocliente.aspx" />
     <Content Include="FeedbackCOF.aspx" />
+    <Content Include="Grafico.aspx" />
     <Content Include="Padrao.Master" />
     <Content Include="Documentação\MODELO SISTEMA SATISFAÇÃO DO CLIENTE EXTERNO.xlsx" />
     <Content Include="RelacoesUsuario.aspx" />
+    <Content Include="resultadopesquisa.aspx" />
     <Content Include="SQL\PSCE.mwb" />
     <Content Include="SQL\PSCE.mwb.bak" />
     <None Include="Web.Debug.config">
@@ -197,6 +199,13 @@
     <Compile Include="FeedbackCOF.aspx.designer.cs">
       <DependentUpon>FeedbackCOF.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Grafico.aspx.cs">
+      <DependentUpon>Grafico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico.aspx.designer.cs">
+      <DependentUpon>Grafico.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Padrao.Master.cs">
       <DependentUpon>Padrao.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,6 +220,13 @@
     </Compile>
     <Compile Include="RelacoesUsuario.aspx.designer.cs">
       <DependentUpon>RelacoesUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resultadopesquisa.aspx.cs">
+      <DependentUpon>resultadopesquisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resultadopesquisa.aspx.designer.cs">
+      <DependentUpon>resultadopesquisa.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

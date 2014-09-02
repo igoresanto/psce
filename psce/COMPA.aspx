@@ -667,9 +667,76 @@
         padding: 0px;
         background: #F2F2F2;
     }
+        .auto-style41 {
+            height: 25pt;
+            width: 159pt;
+            color: #262626;
+            font-size: 10.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            vertical-align: middle;
+            white-space: normal;
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            padding: 0px;
+            background: white;
+        }
+        .auto-style42 {
+            color: windowtext;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            border: .5pt solid gray;
+            padding: 0px;
+            background: #F2F2F2;
+            height: 25pt;
+        }
+        .auto-style43 {
+            width: 68pt;
+            color: windowtext;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: .5pt solid gray;
+            padding: 0px;
+            background: #F2F2F2;
+            height: 25pt;
+        }
+        .auto-style44 {
+            width: 74pt;
+            color: windowtext;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: .5pt solid gray;
+            padding: 0px;
+            background: #F2F2F2;
+            height: 25pt;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p>
+        GRÁFICO - PRONTO ATENDIMENTO</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
   
@@ -732,52 +799,52 @@
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style17" colspan="3" height="33" width="213">Clareza nas informações</td>
-            <td class="auto-style21">
+            <td class="auto-style42">
                 <asp:Label ID="lblen2" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblmsat2" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblsat2" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblinsat2" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblminsat2" runat="server" Text="1"></asp:Label>
             </td>
             <td class="auto-style8" width="90">&nbsp;</td>
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style17" colspan="3" height="33" width="213">Tempo de espera para o atendimento quanto a sua classificação de risco</td>
-            <td class="auto-style21">
+            <td class="auto-style42">
                 <asp:Label ID="lblen3" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblmsat3" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblsat3" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblinsat3" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblminsat3" runat="server" Text="1"></asp:Label>
             </td>
             <td class="auto-style8" width="90">&nbsp;</td>
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style25" colspan="3" height="76" rowspan="2" width="213">Resultado</td>
-            <td class="auto-style26" colspan="2">
-                <asp:Label ID="lblmediasat" runat="server" Text="media s"></asp:Label>
+            <td class="auto-style42" colspan="2">
+                <asp:Label ID="lblmediasat" runat="server" Text="medias"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
-                <asp:Label ID="lblmediaom" runat="server" Text="Media s"></asp:Label>
+            <td class="auto-style42" width="98">
+                <asp:Label ID="lblmediaom" runat="server" Text="Medias"></asp:Label>
             </td>
-            <td class="auto-style27" colspan="2" width="180">
-                <asp:Label ID="lblmediainsat" runat="server" Text="Media s"></asp:Label>
+            <td class="auto-style42" colspan="2" width="180">
+                <asp:Label ID="lblmediainsat" runat="server" Text="Medias"></asp:Label>
             </td>
             <td class="auto-style8" width="90">&nbsp;</td>
         </tr>
@@ -832,51 +899,51 @@
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style33" colspan="3" height="33" width="213">Clareza nas informações</td>
-            <td class="auto-style21">
+            <td class="auto-style42">
                 <asp:Label ID="lblRen2" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblRms2" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblRs2" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblRis2" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblRmis2" runat="server" Text="1"></asp:Label>
             </td>
             <td class="auto-style8" width="90">&nbsp;</td>
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style33" colspan="3" height="33" width="213">Tempo de espera para o atendimento da recepção</td>
-            <td class="auto-style21">
+            <td class="auto-style42">
                 <asp:Label ID="lblRen3" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblRms3" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblRs3" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblRis3" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblRmis3" runat="server" Text="1"></asp:Label>
             </td>
             <td class="auto-style8" width="90">&nbsp;</td>
         </tr>
         <tr height="33" style="mso-height-source:userset;height:24.95pt">
             <td class="auto-style34" colspan="3" height="74" rowspan="2" width="213">Resultado</td>
-            <td class="auto-style26" colspan="2">
+            <td class="auto-style42" colspan="2">
                 <asp:Label ID="lblRmediaS" runat="server" Text="Media"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblRmediaOM" runat="server" Text="Media"></asp:Label>
             </td>
-            <td class="auto-style27" colspan="2" width="180">
+            <td class="auto-style42" colspan="2" width="180">
                 <asp:Label ID="lblRmediaIS" runat="server" Text="Media"></asp:Label>
             </td>
             <td class="auto-style8" width="90">&nbsp;</td>
@@ -936,49 +1003,49 @@
         </tr>
         <tr height="33">
             <td class="auto-style17" colspan="3" height="33" width="213">Clareza nas informações</td>
-            <td class="auto-style38">
+            <td class="auto-style42">
                 <asp:Label ID="lblAMen2" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMms2" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblAMs2" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMins2" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMmins2" runat="server" Text="1"></asp:Label>
             </td>
         </tr>
         <tr height="33">
             <td class="auto-style17" colspan="3" height="33" width="213">Tempo de espera para o atendimento quanto a sua classificação de risco</td>
-            <td class="auto-style38">
+            <td class="auto-style42">
                 <asp:Label ID="lblAMen3" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMms3" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblAMs3" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMins3" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMmins3" runat="server" Text="1"></asp:Label>
             </td>
         </tr>
         <tr height="33">
             <td class="auto-style25" colspan="3" height="76" rowspan="2" width="213">Resultado</td>
-            <td class="auto-style26" colspan="2">
+            <td class="auto-style42" colspan="2">
                 <asp:Label ID="lblAMmediaS" runat="server" Text="Média"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblAMmediaOM" runat="server" Text="Média"></asp:Label>
             </td>
-            <td class="auto-style27" colspan="2" width="180">
+            <td class="auto-style42" colspan="2" width="180">
                 <asp:Label ID="lblAMmediaINS" runat="server" Text="Média"></asp:Label>
             </td>
         </tr>
@@ -1040,49 +1107,49 @@
         </tr>
         <tr height="33">
             <td class="auto-style33" colspan="3" height="33" width="213">Clareza nas informações</td>
-            <td class="auto-style38">
+            <td class="auto-style42">
                 <asp:Label ID="lblENFen2" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblENFms2" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblENFs2" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblENFins2" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblENFmins2" runat="server" Text="1"></asp:Label>
             </td>
         </tr>
         <tr height="33">
             <td class="auto-style33" colspan="3" height="33" width="213">Assistência prestada</td>
-            <td class="auto-style38">
+            <td class="auto-style42">
                 <asp:Label ID="lblENFen3" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblENFms3" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblENFs3" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblENFins3" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblENFmins3" runat="server" Text="1"></asp:Label>
             </td>
         </tr>
         <tr height="33">
             <td class="auto-style34" colspan="3" height="74" rowspan="2" width="213">Resultado</td>
-            <td class="auto-style26" colspan="2">
+            <td class="auto-style42" colspan="2">
                 <asp:Label ID="lblENFmediaS" runat="server" Text="Média"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblENFmediaOM" runat="server" Text="Média"></asp:Label>
             </td>
-            <td class="auto-style27" colspan="2" width="180">
+            <td class="auto-style42" colspan="2" width="180">
                 <asp:Label ID="lblENFmediaINS" runat="server" Text="Média"></asp:Label>
             </td>
         </tr>
@@ -1114,87 +1181,87 @@
             <td class="auto-style15" width="90">Insatisfeito</td>
             <td class="auto-style15" width="90">Muito Insatisfeito</td>
         </tr>
-        <tr height="33">
-            <td class="auto-style33" colspan="3" height="33" width="213">Organização do consultório</td>
-            <td class="auto-style37">
+        <tr>
+            <td class="auto-style41" colspan="3" width="213">Organização do consultório</td>
+            <td class="auto-style42">
                 <asp:Label ID="lblAMBIen1" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style19" width="90">
+            <td class="auto-style43" width="90">
                 <asp:Label ID="lblAMBIms1" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style20" width="98">
+            <td class="auto-style44" width="98">
                 <asp:Label ID="lblAMBIs1" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style19" width="90">
+            <td class="auto-style43" width="90">
                 <asp:Label ID="lblAMBIins1" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style19" width="90">
+            <td class="auto-style43" width="90">
                 <asp:Label ID="lblAMBImins1" runat="server" Text="1"></asp:Label>
             </td>
         </tr>
         <tr height="33">
             <td class="auto-style33" colspan="3" height="33" width="213">Acomodação do paciente</td>
-            <td class="auto-style38">
+            <td class="auto-style42">
                 <asp:Label ID="lblAMBIen2" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBIms2" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblAMBIs2" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBIins2" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBImins2" runat="server" Text="1"></asp:Label>
             </td>
         </tr>
         <tr height="33">
             <td class="auto-style33" colspan="3" height="33" width="213">Higiene e Limpeza</td>
-            <td class="auto-style38">
+            <td class="auto-style42">
                 <asp:Label ID="lblAMBIen3" runat="server" Text="5"></asp:Label>
             </td>
-            <td class="auto-style22" width="90" id="lblAMBIms3">
+            <td class="auto-style42" width="90" id="lblAMBIms3">
                 <asp:Label ID="lblAMBIms3" runat="server" Text="4"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblAMBIs3" runat="server" Text="3"></asp:Label>
             </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBIins3" runat="server" Text="2"></asp:Label>
             </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBImins3" runat="server" Text="1"></asp:Label>
             </td>
         </tr>
          <tr height="33">
             <td class="auto-style33" colspan="3" height="33" width="213">Ruído</td>
-            <td class="auto-style38">
+            <td class="auto-style42">
                 <asp:Label ID="lblAMBIen4" runat="server" Text="5"></asp:Label>
              </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBIms4" runat="server" Text="4"></asp:Label>
              </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblAMBIs4" runat="server" Text="3"></asp:Label>
              </td>
-            <td class="auto-style22" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBIins4" runat="server" Text="2"></asp:Label>
              </td>
-            <td class="auto-style24" width="90">
+            <td class="auto-style42" width="90">
                 <asp:Label ID="lblAMBImins4" runat="server" Text="1"></asp:Label>
              </td>
         </tr>
         <tr height="33">
             <td class="auto-style34" colspan="3" height="74" rowspan="2" width="213">Resultado</td>
-            <td class="auto-style26" colspan="2">
+            <td class="auto-style42" colspan="2">
                 <asp:Label ID="lblAMBImediaS" runat="server" Text="Média"></asp:Label>
             </td>
-            <td class="auto-style23" width="98">
+            <td class="auto-style42" width="98">
                 <asp:Label ID="lblAMBImediaOM" runat="server" Text="Média"></asp:Label>
             </td>
-            <td class="auto-style27" colspan="2" width="180">
+            <td class="auto-style42" colspan="2" width="180">
                 <asp:Label ID="lblAMBImediaINS" runat="server" Text="Média"></asp:Label>
             </td>
         </tr>
@@ -1267,13 +1334,13 @@
                     </colgroup>
                     <tr height="33">
                         <td class="auto-style34" colspan="3" height="74" rowspan="2" width="213">Resultado</td>
-                        <td class="auto-style40" colspan="2" width="179">
+                        <td class="auto-style42" colspan="2" width="179">
                             <asp:Label ID="lblINFmediaS" runat="server" Text="Média"></asp:Label>
                         </td>
-                        <td class="auto-style23" width="98">
+                        <td class="auto-style42" width="98">
                             <asp:Label ID="lblINFmediaOM" runat="server" Text="Média"></asp:Label>
                         </td>
-                        <td class="auto-style27" colspan="2" width="180">
+                        <td class="auto-style42" colspan="2" width="180">
                             <asp:Label ID="lblINFmediaINS" runat="server" Text="Média"></asp:Label>
                         </td>
                     </tr>

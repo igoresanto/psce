@@ -8,5 +8,6 @@
     <a href="AvaliacaoAtendimento.aspx" style="font-family:'Arial Rounded MT';color:rgb(128,128,128)"><img src="img/seta.png" style="height: 28px; width: 32px;margin-bottom:-9px" />BUSCA ATIVA AMBULATORIAL</a><br />
     <a href="feedbackaocliente.aspx" style="font-family:'Arial Rounded MT';color:rgb(128,128,128)"><img src="img/seta.png" style="height: 28px; width: 32px;margin-bottom:-9px" />FEED BACK AO CLIENTE</a><br />
     <a href="RelacoesUsuario.aspx" style="font-family:'Arial Rounded MT';color:rgb(128,128,128)"><img src="img/seta.png" style="height: 28px; width: 32px;margin-bottom:-9px" />RELAÇÃO DE USUÁRIOS</a><br />
+    <a href="resultadopesquisa.aspx" style="font-family:'Arial Rounded MT';color:rgb(128,128,128)"><img src="img/seta.png" style="height: 28px; width: 32px;margin-bottom:-9px" />RESULTADO PESQUISA DE SATISFAÇÃO DO CLIENTE EXTERNO</a><br />
     <a href="CadastroUsuario.aspx" style="font-family:'Arial Rounded MT';color:rgb(128,128,128)"><img src="img/seta.png" style="height: 28px; width: 32px;margin-bottom:-9px" />CADASTRAR USUÁRIOS</a><br />
 </asp:Content>
