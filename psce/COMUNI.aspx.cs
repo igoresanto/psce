@@ -185,6 +185,162 @@ namespace PSCE
             lblRAmediaS.Text = ((mediaROsat1 + mediaROsat2 + mediaROsat3 + mediaROsat4 + mediaROsat5 + mediaROsat6) / 3).ToString();
             lblRAmediaOM.Text = ((mediaROom + mediaROom1 + mediaROom2) / 3).ToString();
             lblRAmediaINS.Text = ((mediaROinsat1 + mediaROinsat2 + mediaROinsat3 + mediaROinsat4 + mediaROinsat5 + mediaROinsat6) / 3).ToString();
+            //Alimentação
+            //Linha 1
+            DataTable ALEncantado1 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ1 = 5 ");
+            lblALen1.Text = ALEncantado1.Rows[0][0].ToString();
+            DataTable ALMSatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ1 = 4 ");
+            lblALms1.Text = ALMSatisfeito1.Rows[0][0].ToString();
+            DataTable ALSatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ1 = 3 ");
+            lblALs1.Text = ALSatisfeito1.Rows[0][0].ToString();
+            DataTable ALInsatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ1 = 2 ");
+            lblALins1.Text = ALInsatisfeito1.Rows[0][0].ToString();
+            DataTable ALMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ1 = 1 ");
+            lblALmins1.Text = ALMInsatisfeito1.Rows[0][0].ToString();
+            //Linha 2
+            DataTable ALEncantado2 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ2 = 5 ");
+            lblALen2.Text = ALEncantado2.Rows[0][0].ToString();
+            DataTable ALMSatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ2 = 4 ");
+            lblALms2.Text = ALMSatisfeito2.Rows[0][0].ToString();
+            DataTable ALSatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ2 = 3 ");
+            lblALs2.Text = ALSatisfeito2.Rows[0][0].ToString();
+            DataTable ALInsatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ2 = 2 ");
+            lblALins2.Text = ALInsatisfeito2.Rows[0][0].ToString();
+            DataTable ALMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ2 = 1 ");
+            lblALmins2.Text = ALMInsatisfeito2.Rows[0][0].ToString();
+            //Linha 3
+            DataTable ALEncantado3 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ3 = 5 ");
+            lblALen3.Text = ALEncantado3.Rows[0][0].ToString();
+            DataTable ALMSatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ3 = 4 ");
+            lblALms3.Text = ALMSatisfeito3.Rows[0][0].ToString();
+            DataTable ALSatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ3 = 3 ");
+            lblALs3.Text = ALSatisfeito3.Rows[0][0].ToString();
+            DataTable ALInsatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ3 = 2 ");
+            lblALins3.Text = ALInsatisfeito3.Rows[0][0].ToString();
+            DataTable ALMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ3 = 1 ");
+            lblALmins3.Text = ALMInsatisfeito3.Rows[0][0].ToString();
+            //Linha 4
+            DataTable ALEncantado4 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ4 = 5 ");
+            lblALen4.Text = ALEncantado4.Rows[0][0].ToString();
+            DataTable ALMSatisfeito4 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ4 = 4 ");
+            lblALms4.Text = ALMSatisfeito4.Rows[0][0].ToString();
+            DataTable ALSatisfeito4 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ4 = 3 ");
+            lblALs4.Text = ALSatisfeito4.Rows[0][0].ToString();
+            DataTable ALInsatisfeito4 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ4 = 2 ");
+            lblALins4.Text = ALInsatisfeito4.Rows[0][0].ToString();
+            DataTable ALMInsatisfeito4 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ4 = 1 ");
+            lblALmins4.Text = ALMInsatisfeito4.Rows[0][0].ToString();
+            //Linha 5
+            DataTable ALEncantado5 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ5 = 5 ");
+            lblALen5.Text = ALEncantado5.Rows[0][0].ToString();
+            DataTable ALMSatisfeito5 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ5 = 4 ");
+            lblALms5.Text = ALMSatisfeito5.Rows[0][0].ToString();
+            DataTable ALSatisfeito5 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ5 = 3 ");
+            lblALs5.Text = ALSatisfeito5.Rows[0][0].ToString();
+            DataTable ALInsatisfeito5 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ5 = 2 ");
+            lblALins5.Text = ALInsatisfeito5.Rows[0][0].ToString();
+            DataTable ALMInsatisfeito5 = bd.lista("SELECT count(*) FROM `fui` WHERE ALQ5 = 1 ");
+            lblALmins5.Text = ALMInsatisfeito5.Rows[0][0].ToString();
+            //média
+            float mediaALsat1 = Convert.ToInt32(ALEncantado1.Rows[0][0].ToString()), mediaALsat2 = Convert.ToInt32(ALEncantado2.Rows[0][0].ToString()), mediaALsat3 = Convert.ToInt32(ALEncantado3.Rows[0][0].ToString());
+            float mediaALsat4 = Convert.ToInt32(ALMSatisfeito1.Rows[0][0].ToString()), mediaALsat5 = Convert.ToInt32(ALMSatisfeito2.Rows[0][0].ToString()), mediaALsat6 = Convert.ToInt32(ALMSatisfeito3.Rows[0][0].ToString());
+            float mediaALsat7 = Convert.ToInt32(ALEncantado4.Rows[0][0].ToString()), mediaALsat8 = Convert.ToInt32(ALEncantado5.Rows[0][0].ToString()), mediaALsat9 = Convert.ToInt32(ALSatisfeito4.Rows[0][0].ToString()), mediaALsat10 = Convert.ToInt32(ALSatisfeito5.Rows[0][0].ToString());
+            float mediaALom = Convert.ToInt32(ALMSatisfeito1.Rows[0][0].ToString()), mediaALom1 = Convert.ToInt32(ALMSatisfeito2.Rows[0][0].ToString()), mediaALom2 = Convert.ToInt32(ALMSatisfeito3.Rows[0][0].ToString());
+            float mediaALom3 = Convert.ToInt32(ALSatisfeito4.Rows[0][0].ToString()), mediaALom4 = Convert.ToInt32(ALSatisfeito5.Rows[0][0].ToString());
+            float mediaALinsat1 = Convert.ToInt32(ALInsatisfeito1.Rows[0][0].ToString()), mediaALinsat2 = Convert.ToInt32(ALInsatisfeito2.Rows[0][0].ToString()), mediaALinsat3 = Convert.ToInt32(ALInsatisfeito3.Rows[0][0].ToString());
+            float mediaALinsat7 = Convert.ToInt32(ALInsatisfeito4.Rows[0][0].ToString()), mediaALinsat8 = Convert.ToInt32(ALInsatisfeito5.Rows[0][0].ToString().ToString()), mediaALinsat9 = Convert.ToInt32(ALMInsatisfeito4.Rows[0][0].ToString()), mediaALinsat10 = Convert.ToInt32(ALMInsatisfeito5.Rows[0][0].ToString());
+            float mediaALinsat4 = Convert.ToInt32(ALMInsatisfeito1.Rows[0][0].ToString()), mediaALinsat5 = Convert.ToInt32(ALMInsatisfeito2.Rows[0][0].ToString()), mediaALinsat6 = Convert.ToInt32(ALMInsatisfeito3.Rows[0][0].ToString());
+            lblALmediaS.Text = ((mediaALsat1 + mediaALsat2 + mediaALsat3 + mediaALsat4 + mediaALsat5 + mediaALsat6 + mediaALsat7 + mediaALsat8 + mediaALsat9) / 3).ToString();
+            lblALmediaOM.Text = ((mediaALom + mediaALom1 + mediaALom2 + mediaALom3 + mediaALom4) / 3).ToString();
+            lblALmediaINS.Text = ((mediaALinsat1 + mediaALinsat2 + mediaALinsat3 + mediaALinsat4 + mediaALinsat5 + mediaALinsat6 + mediaALinsat7 + mediaALinsat9 + mediaALinsat10) / 3).ToString();
+            //Ambiente
+            //Linha 1
+            DataTable AMBEncantado1 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ1 = 5 ");
+            lblAMBen1.Text = AMBEncantado1.Rows[0][0].ToString();
+            DataTable AMBMSatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ1 = 4 ");
+            lblAMBms1.Text = AMBMSatisfeito1.Rows[0][0].ToString();
+            DataTable AMBSatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ1 = 3 ");
+            lblAMBs1.Text = AMBSatisfeito1.Rows[0][0].ToString();
+            DataTable AMBInsatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ1 = 2 ");
+            lblAMBins1.Text = AMBInsatisfeito1.Rows[0][0].ToString();
+            DataTable AMBMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ1 = 1 ");
+            lblAMBmins1.Text = AMBMInsatisfeito1.Rows[0][0].ToString();
+            //Linha 2
+            DataTable AMBEncantado2 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ2 = 5 ");
+            lblAMBen2.Text = AMBEncantado2.Rows[0][0].ToString();
+            DataTable AMBMSatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ2 = 4 ");
+            lblAMBms2.Text = AMBMSatisfeito2.Rows[0][0].ToString();
+            DataTable AMBSatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ2 = 3 ");
+            lblAMBs2.Text = AMBSatisfeito2.Rows[0][0].ToString();
+            DataTable AMBInsatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ2 = 2 ");
+            lblAMBins2.Text = AMBInsatisfeito2.Rows[0][0].ToString();
+            DataTable AMBMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ2 = 1 ");
+            lblAMBminss2.Text = AMBMInsatisfeito2.Rows[0][0].ToString();
+            //Linha 3
+            DataTable AMBEncantado3 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ3 = 5 ");
+            lblAMBen3.Text = AMBEncantado3.Rows[0][0].ToString();
+            DataTable AMBMSatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ3 = 4 ");
+            lblAMBms3.Text = AMBMSatisfeito3.Rows[0][0].ToString();
+            DataTable AMBSatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ3 = 3 ");
+            lblAMBs3.Text = AMBSatisfeito3.Rows[0][0].ToString();
+            DataTable AMBInsatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ3 = 2 ");
+            lblAMBins3.Text = AMBInsatisfeito3.Rows[0][0].ToString();
+            DataTable AMBMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE ABQ3 = 1 ");
+            lblAMBminss3.Text = AMBMInsatisfeito3.Rows[0][0].ToString();
+            //media 
+            float mediaABsat1 = Convert.ToInt32(AMBEncantado1.Rows[0][0].ToString()), mediaABsat2 = Convert.ToInt32(AMBEncantado2.Rows[0][0].ToString()), mediaABsat3 = Convert.ToInt32(AMBEncantado3.Rows[0][0].ToString());
+            float mediaABsat4 = Convert.ToInt32(AMBMSatisfeito1.Rows[0][0].ToString()), mediaABsat5 = Convert.ToInt32(AMBMSatisfeito2.Rows[0][0].ToString()), mediaABsat6 = Convert.ToInt32(AMBMSatisfeito3.Rows[0][0].ToString());
+            float mediaABom = Convert.ToInt32(AMBSatisfeito1.Rows[0][0].ToString()), mediaABom1 = Convert.ToInt32(AMBSatisfeito2.Rows[0][0].ToString()), mediaABom2 = Convert.ToInt32(AMBSatisfeito3.Rows[0][0].ToString());
+            float mediaABinsat1 = Convert.ToInt32(AMBInsatisfeito1.Rows[0][0].ToString()), mediaABinsat2 = Convert.ToInt32(AMBInsatisfeito2.Rows[0][0].ToString()), mediaABinsat3 = Convert.ToInt32(AMBInsatisfeito3.Rows[0][0].ToString());
+            float mediaABinsat4 = Convert.ToInt32(AMBMInsatisfeito1.Rows[0][0].ToString()), mediaABinsat5 = Convert.ToInt32(AMBMInsatisfeito2.Rows[0][0].ToString()), mediaABinsat6 = Convert.ToInt32(AMBMInsatisfeito3.Rows[0][0].ToString());
+            lblAMBmediaS.Text = ((mediaABsat1 + mediaABsat2 + mediaABsat3 + mediaABsat4 + mediaABsat5 + mediaABsat6) / 3).ToString();
+            lblAMBmediaOM.Text = ((mediaABom + mediaABom1 + mediaABom2) / 3).ToString();
+            lblAMBmediaINS.Text = ((mediaABinsat1 + mediaABinsat2 + mediaABinsat3 + mediaABinsat4 + mediaABinsat5 + mediaABinsat6) / 3).ToString();
+            //Infraestrutura e manutenção
+            //Linha 1
+            DataTable IMEncantado1 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ1 = 5 ");
+            lblIMen1.Text = IMEncantado1.Rows[0][0].ToString();
+            DataTable IMMSatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ1 = 4 ");
+            lblIMms1.Text = IMMSatisfeito1.Rows[0][0].ToString();
+            DataTable IMSatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ1 = 3 ");
+            lblIMs1.Text = IMSatisfeito1.Rows[0][0].ToString();
+            DataTable IMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ1 = 2 ");
+            lblIMins1.Text = IMInsatisfeito1.Rows[0][0].ToString();
+            DataTable IMMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ1 = 1 ");
+            lblIMmins1.Text = IMMInsatisfeito1.Rows[0][0].ToString();
+            //Linha 2
+            DataTable IMEncantado2 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ2 = 5 ");
+            lblIMen2.Text = IMEncantado2.Rows[0][0].ToString();
+            DataTable IMMSatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ2 = 4 ");
+            lblIMms2.Text = IMMSatisfeito2.Rows[0][0].ToString();
+            DataTable IMSatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ2 = 3 ");
+            lblIMs2.Text = IMSatisfeito2.Rows[0][0].ToString();
+            DataTable IMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ2 = 2 ");
+            lblIMins2.Text = IMInsatisfeito2.Rows[0][0].ToString();
+            DataTable IMMInsatisfeito2 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ2 = 1 ");
+            lblIMmins2.Text = IMMInsatisfeito2.Rows[0][0].ToString();
+            //Linha 3
+            DataTable IMEncantado3 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ3 = 5 ");
+            lblIMen3.Text = IMEncantado3.Rows[0][0].ToString();
+            DataTable IMMSatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ3 = 4 ");
+            lblIMms3.Text = IMMSatisfeito3.Rows[0][0].ToString();
+            DataTable IMSatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ3 = 3 ");
+            lblIMs3.Text = IMSatisfeito3.Rows[0][0].ToString();
+            DataTable IMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ3 = 2 ");
+            lblIMins3.Text = IMInsatisfeito3.Rows[0][0].ToString();
+            DataTable IMMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fui` WHERE IMQ3 = 1 ");
+            lblIMmins3.Text = IMMInsatisfeito3.Rows[0][0].ToString();
+            //media 
+            float mediaIMsat1 = Convert.ToInt32(IMEncantado1.Rows[0][0].ToString()), mediaIMsat2 = Convert.ToInt32(IMEncantado2.Rows[0][0].ToString()), mediaIMsat3 = Convert.ToInt32(IMEncantado3.Rows[0][0].ToString());
+            float mediaIMsat4 = Convert.ToInt32(IMMSatisfeito1.Rows[0][0].ToString()), mediaIMsat5 = Convert.ToInt32(IMMSatisfeito2.Rows[0][0].ToString()), mediaIMsat6 = Convert.ToInt32(IMMSatisfeito3.Rows[0][0].ToString());
+            float mediaIMom = Convert.ToInt32(IMSatisfeito1.Rows[0][0].ToString()), mediaIMom1 = Convert.ToInt32(IMSatisfeito2.Rows[0][0].ToString()), mediaIMom2 = Convert.ToInt32(IMSatisfeito3.Rows[0][0].ToString());
+            float mediaIMinsat1 = Convert.ToInt32(IMInsatisfeito1.Rows[0][0].ToString()), mediaIMinsat2 = Convert.ToInt32(IMInsatisfeito2.Rows[0][0].ToString()), mediaIMinsat3 = Convert.ToInt32(IMInsatisfeito3.Rows[0][0].ToString());
+            float mediaIMinsat4 = Convert.ToInt32(AMBMInsatisfeito1.Rows[0][0].ToString()), mediaIMinsat5 = Convert.ToInt32(IMMInsatisfeito2.Rows[0][0].ToString()), mediaIMinsat6 = Convert.ToInt32(IMMInsatisfeito3.Rows[0][0].ToString());
+            lblIMmediaS.Text = ((mediaIMsat1 + mediaIMsat2 + mediaIMsat3 + mediaIMsat4 + mediaIMsat5 + mediaIMsat6) / 3).ToString();
+            lblIMmediaOM.Text = ((mediaIMom + mediaIMom1 + mediaIMom2) / 3).ToString();
+            lblIMmediaINS.Text = ((mediaIMinsat1 + mediaIMinsat2 + mediaIMinsat3 + mediaIMinsat4 + mediaIMinsat5 + mediaIMinsat6) / 3).ToString();
+
+            
         }
     }
 }
