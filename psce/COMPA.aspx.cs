@@ -49,11 +49,11 @@ namespace PSCE
             DataTable MInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE CRQ3 = 1 ");
             lblminsat3.Text = MInsatisfeito3.Rows[0][0].ToString();
             //media 
-            int mediasat1= Convert.ToInt32(Encantado1.Rows[0][0].ToString()), mediasat2 = Convert.ToInt32(Encantado2.Rows[0][0].ToString()), mediasat3 = Convert.ToInt32(Encantado3.Rows[0][0].ToString());
-            int mediasat4 = Convert.ToInt32(MSatisfeito1.Rows[0][0].ToString()), mediasat5 = Convert.ToInt32(MSatisfeito2.Rows[0][0].ToString()), mediasat6 = Convert.ToInt32(MSatisfeito3.Rows[0][0].ToString());
-            int mediaom = Convert.ToInt32(Satisfeito1.Rows[0][0].ToString()), mediaom1 = Convert.ToInt32(Satisfeito2.Rows[0][0].ToString()), mediaom2 = Convert.ToInt32(Satisfeito3.Rows[0][0].ToString());
-            int mediainsat1 = Convert.ToInt32(Insatisfeito1.Rows[0][0].ToString()), mediainsat2 = Convert.ToInt32(Insatisfeito2.Rows[0][0].ToString()), mediainsat3= Convert.ToInt32(Insatisfeito3.Rows[0][0].ToString());
-            int mediainsat4 = Convert.ToInt32(MInsatisfeito1.Rows[0][0].ToString()), mediainsat5 = Convert.ToInt32(MInsatisfeito2.Rows[0][0].ToString()), mediainsat6 = Convert.ToInt32(MInsatisfeito3.Rows[0][0].ToString());
+            float mediasat1= Convert.ToInt32(Encantado1.Rows[0][0].ToString()), mediasat2 = Convert.ToInt32(Encantado2.Rows[0][0].ToString()), mediasat3 = Convert.ToInt32(Encantado3.Rows[0][0].ToString());
+            float mediasat4 = Convert.ToInt32(MSatisfeito1.Rows[0][0].ToString()), mediasat5 = Convert.ToInt32(MSatisfeito2.Rows[0][0].ToString()), mediasat6 = Convert.ToInt32(MSatisfeito3.Rows[0][0].ToString());
+            float mediaom = Convert.ToInt32(Satisfeito1.Rows[0][0].ToString()), mediaom1 = Convert.ToInt32(Satisfeito2.Rows[0][0].ToString()), mediaom2 = Convert.ToInt32(Satisfeito3.Rows[0][0].ToString());
+            float mediainsat1 = Convert.ToInt32(Insatisfeito1.Rows[0][0].ToString()), mediainsat2 = Convert.ToInt32(Insatisfeito2.Rows[0][0].ToString()), mediainsat3= Convert.ToInt32(Insatisfeito3.Rows[0][0].ToString());
+            float mediainsat4 = Convert.ToInt32(MInsatisfeito1.Rows[0][0].ToString()), mediainsat5 = Convert.ToInt32(MInsatisfeito2.Rows[0][0].ToString()), mediainsat6 = Convert.ToInt32(MInsatisfeito3.Rows[0][0].ToString());
             lblmediasat.Text = (mediasat1 + mediasat2 + mediasat3 + mediasat4 + mediasat5 + mediasat6 / 3).ToString();
             lblmediaom.Text = (mediaom + mediaom1 + mediaom2 / 3).ToString();
             lblmediainsat.Text = (mediainsat1 + mediainsat2 + mediainsat3 + mediainsat4 + mediainsat5 + mediainsat6 / 3).ToString();
@@ -92,11 +92,11 @@ namespace PSCE
             DataTable RMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE RQ3 = 1 ");
             lblRmis3.Text = RMInsatisfeito3.Rows[0][0].ToString();
             //Media
-            int mediarsat1 = Convert.ToInt32(REncantado1.Rows[0][0].ToString()), mediarsat2 = Convert.ToInt32(REncantado2.Rows[0][0].ToString()), mediarsat3 = Convert.ToInt32(REncantado3.Rows[0][0].ToString());
-            int mediarsat4 = Convert.ToInt32(RMSatisfeito1.Rows[0][0].ToString()), mediarsat5 = Convert.ToInt32(RMSatisfeito2.Rows[0][0].ToString()), mediarsat6 = Convert.ToInt32(RMSatisfeito3.Rows[0][0].ToString());
-            int mediarom = Convert.ToInt32(RSatisfeito1.Rows[0][0].ToString()), mediarom1 = Convert.ToInt32(RSatisfeito2.Rows[0][0].ToString()), mediarom2 = Convert.ToInt32(RSatisfeito3.Rows[0][0].ToString());
-            int mediarinsat1 = Convert.ToInt32(RInsatisfeito1.Rows[0][0].ToString()), mediarinsat2 = Convert.ToInt32(RInsatisfeito2.Rows[0][0].ToString()), mediarinsat3 = Convert.ToInt32(RInsatisfeito3.Rows[0][0].ToString());
-            int mediarinsat4 = Convert.ToInt32(RMInsatisfeito1.Rows[0][0].ToString()), mediarinsat5 = Convert.ToInt32(RMInsatisfeito2.Rows[0][0].ToString()), mediarinsat6 = Convert.ToInt32(RMInsatisfeito3.Rows[0][0].ToString());
+            float mediarsat1 = Convert.ToInt32(REncantado1.Rows[0][0].ToString()), mediarsat2 = Convert.ToInt32(REncantado2.Rows[0][0].ToString()), mediarsat3 = Convert.ToInt32(REncantado3.Rows[0][0].ToString());
+            float mediarsat4 = Convert.ToInt32(RMSatisfeito1.Rows[0][0].ToString()), mediarsat5 = Convert.ToInt32(RMSatisfeito2.Rows[0][0].ToString()), mediarsat6 = Convert.ToInt32(RMSatisfeito3.Rows[0][0].ToString());
+            float mediarom = Convert.ToInt32(RSatisfeito1.Rows[0][0].ToString()), mediarom1 = Convert.ToInt32(RSatisfeito2.Rows[0][0].ToString()), mediarom2 = Convert.ToInt32(RSatisfeito3.Rows[0][0].ToString());
+            float mediarinsat1 = Convert.ToInt32(RInsatisfeito1.Rows[0][0].ToString()), mediarinsat2 = Convert.ToInt32(RInsatisfeito2.Rows[0][0].ToString()), mediarinsat3 = Convert.ToInt32(RInsatisfeito3.Rows[0][0].ToString());
+            float mediarinsat4 = Convert.ToInt32(RMInsatisfeito1.Rows[0][0].ToString()), mediarinsat5 = Convert.ToInt32(RMInsatisfeito2.Rows[0][0].ToString()), mediarinsat6 = Convert.ToInt32(RMInsatisfeito3.Rows[0][0].ToString());
             lblRmediaS.Text = (mediarsat1 + mediarsat2 + mediarsat3 + mediarsat4 + mediarsat5 + mediarsat6 / 3).ToString();
             lblRmediaOM.Text = (mediarom + mediarom1 + mediarom2 / 3).ToString();
             lblRmediaIS.Text = (mediarinsat1 + mediarinsat2 + mediarinsat3 + mediarinsat4 + mediarinsat5 + mediarinsat6 / 3).ToString();
@@ -135,11 +135,11 @@ namespace PSCE
             DataTable AMMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE AMQ3 = 1 ");
             lblAMmins3.Text = AMMInsatisfeito3.Rows[0][0].ToString();
             //Media
-            int mediaAMsat1 = Convert.ToInt32(AMEncantado1.Rows[0][0].ToString()), mediaAMsat2 = Convert.ToInt32(AMEncantado2.Rows[0][0].ToString()), mediaAMsat3 = Convert.ToInt32(AMEncantado3.Rows[0][0].ToString());
-            int mediaAMsat4 = Convert.ToInt32(AMMSatisfeito1.Rows[0][0].ToString()), mediaAMsat5 = Convert.ToInt32(AMMSatisfeito2.Rows[0][0].ToString()), mediaAMsat6 = Convert.ToInt32(AMMSatisfeito3.Rows[0][0].ToString());
-            int mediaAMom = Convert.ToInt32(AMSatisfeito1.Rows[0][0].ToString()), mediaAMom1 = Convert.ToInt32(AMSatisfeito2.Rows[0][0].ToString()), mediaAMom2 = Convert.ToInt32(AMSatisfeito3.Rows[0][0].ToString());
-            int mediaAMinsat1 = Convert.ToInt32(AMInsatisfeito1.Rows[0][0].ToString()), mediaAMinsat2 = Convert.ToInt32(AMInsatisfeito2.Rows[0][0].ToString()), mediaAMinsat3 = Convert.ToInt32(AMInsatisfeito3.Rows[0][0].ToString());
-            int mediaAMinsat4 = Convert.ToInt32(AMMInsatisfeito1.Rows[0][0].ToString()), mediaAMinsat5 = Convert.ToInt32(AMMInsatisfeito2.Rows[0][0].ToString()), mediaAMinsat6 = Convert.ToInt32(AMMInsatisfeito3.Rows[0][0].ToString());
+            float mediaAMsat1 = Convert.ToInt32(AMEncantado1.Rows[0][0].ToString()), mediaAMsat2 = Convert.ToInt32(AMEncantado2.Rows[0][0].ToString()), mediaAMsat3 = Convert.ToInt32(AMEncantado3.Rows[0][0].ToString());
+            float mediaAMsat4 = Convert.ToInt32(AMMSatisfeito1.Rows[0][0].ToString()), mediaAMsat5 = Convert.ToInt32(AMMSatisfeito2.Rows[0][0].ToString()), mediaAMsat6 = Convert.ToInt32(AMMSatisfeito3.Rows[0][0].ToString());
+            float mediaAMom = Convert.ToInt32(AMSatisfeito1.Rows[0][0].ToString()), mediaAMom1 = Convert.ToInt32(AMSatisfeito2.Rows[0][0].ToString()), mediaAMom2 = Convert.ToInt32(AMSatisfeito3.Rows[0][0].ToString());
+            float mediaAMinsat1 = Convert.ToInt32(AMInsatisfeito1.Rows[0][0].ToString()), mediaAMinsat2 = Convert.ToInt32(AMInsatisfeito2.Rows[0][0].ToString()), mediaAMinsat3 = Convert.ToInt32(AMInsatisfeito3.Rows[0][0].ToString());
+            float mediaAMinsat4 = Convert.ToInt32(AMMInsatisfeito1.Rows[0][0].ToString()), mediaAMinsat5 = Convert.ToInt32(AMMInsatisfeito2.Rows[0][0].ToString()), mediaAMinsat6 = Convert.ToInt32(AMMInsatisfeito3.Rows[0][0].ToString());
             lblAMmediaS.Text = (mediaAMsat1 + mediaAMsat2 + mediaAMsat3 + mediaAMsat4 + mediaAMsat5 + mediaAMsat6 / 3).ToString();
             lblAMmediaOM.Text = (mediaAMom + mediaAMom1 + mediaAMom2 / 3).ToString();
             lblAMmediaINS.Text = (mediaAMinsat1 + mediaAMinsat2 + mediaAMinsat3 + mediaAMinsat4 + mediaAMinsat5 + mediaAMinsat6 / 3).ToString();
@@ -178,11 +178,11 @@ namespace PSCE
             DataTable ENFMInsatisfeito3 = bd.lista("SELECT count(*) FROM `fpa` WHERE ENQ3 = 1 ");
             lblENFmins3.Text = ENFMInsatisfeito3.Rows[0][0].ToString();
             //Média
-            int mediaENFsat1 = Convert.ToInt32(ENFEncantado1.Rows[0][0].ToString()), mediaENFsat2 = Convert.ToInt32(ENFEncantado2.Rows[0][0].ToString()), mediaENFsat3 = Convert.ToInt32(ENFEncantado3.Rows[0][0].ToString());
-            int mediaENFsat4 = Convert.ToInt32(ENFMSatisfeito1.Rows[0][0].ToString()), mediaENFsat5 = Convert.ToInt32(ENFMSatisfeito2.Rows[0][0].ToString()), mediaENFsat6 = Convert.ToInt32(ENFMSatisfeito3.Rows[0][0].ToString());
-            int mediaENFom = Convert.ToInt32(ENFSatisfeito1.Rows[0][0].ToString()), mediaENFom1 = Convert.ToInt32(ENFSatisfeito2.Rows[0][0].ToString()), mediaENFom2 = Convert.ToInt32(ENFSatisfeito3.Rows[0][0].ToString());
-            int mediaENFinsat1 = Convert.ToInt32(ENFInsatisfeito1.Rows[0][0].ToString()), mediaENFinsat2 = Convert.ToInt32(ENFInsatisfeito2.Rows[0][0].ToString()), mediaENFinsat3 = Convert.ToInt32(ENFInsatisfeito3.Rows[0][0].ToString());
-            int mediaENFinsat4 = Convert.ToInt32(ENFMInsatisfeito1.Rows[0][0].ToString()), mediaENFinsat5 = Convert.ToInt32(ENFMInsatisfeito2.Rows[0][0].ToString()), mediaENFinsat6 = Convert.ToInt32(ENFMInsatisfeito3.Rows[0][0].ToString());
+            float mediaENFsat1 = Convert.ToInt32(ENFEncantado1.Rows[0][0].ToString()), mediaENFsat2 = Convert.ToInt32(ENFEncantado2.Rows[0][0].ToString()), mediaENFsat3 = Convert.ToInt32(ENFEncantado3.Rows[0][0].ToString());
+            float mediaENFsat4 = Convert.ToInt32(ENFMSatisfeito1.Rows[0][0].ToString()), mediaENFsat5 = Convert.ToInt32(ENFMSatisfeito2.Rows[0][0].ToString()), mediaENFsat6 = Convert.ToInt32(ENFMSatisfeito3.Rows[0][0].ToString());
+            float mediaENFom = Convert.ToInt32(ENFSatisfeito1.Rows[0][0].ToString()), mediaENFom1 = Convert.ToInt32(ENFSatisfeito2.Rows[0][0].ToString()), mediaENFom2 = Convert.ToInt32(ENFSatisfeito3.Rows[0][0].ToString());
+            float mediaENFinsat1 = Convert.ToInt32(ENFInsatisfeito1.Rows[0][0].ToString()), mediaENFinsat2 = Convert.ToInt32(ENFInsatisfeito2.Rows[0][0].ToString()), mediaENFinsat3 = Convert.ToInt32(ENFInsatisfeito3.Rows[0][0].ToString());
+            float mediaENFinsat4 = Convert.ToInt32(ENFMInsatisfeito1.Rows[0][0].ToString()), mediaENFinsat5 = Convert.ToInt32(ENFMInsatisfeito2.Rows[0][0].ToString()), mediaENFinsat6 = Convert.ToInt32(ENFMInsatisfeito3.Rows[0][0].ToString());
             lblENFmediaS.Text = (mediaENFsat1 + mediaENFsat2 + mediaENFsat3 + mediaENFsat4 + mediaENFsat5 + mediaENFsat6 / 3).ToString();
             lblENFmediaOM.Text = (mediaENFom + mediaENFom1 + mediaENFom2 / 3).ToString();
             lblENFmediaINS.Text = (mediaENFinsat1 + mediaENFinsat2 + mediaENFinsat3 + mediaENFinsat4 + mediaENFinsat5 + mediaENFinsat6 / 3).ToString();
@@ -233,11 +233,11 @@ namespace PSCE
             lblAMBImins4.Text = AMBIMInsatisfeito4.Rows[0][0].ToString();
 
             //Media
-            int mediaAMBIsat1 = Convert.ToInt32(AMBIEncantado1.Rows[0][0].ToString()), mediaAMBIsat2 = Convert.ToInt32(AMBIEncantado2.Rows[0][0].ToString()), mediaAMBIsat3 = Convert.ToInt32(AMBIEncantado3.Rows[0][0].ToString());
-            int mediaAMBIsat4 = Convert.ToInt32(AMBIMSatisfeito1.Rows[0][0].ToString()), mediaAMBIsat5 = Convert.ToInt32(AMBIMSatisfeito2.Rows[0][0].ToString()), mediaAMBIsat6 = Convert.ToInt32(AMBIMSatisfeito3.Rows[0][0].ToString()), mediaAMBIsat7 = Convert.ToInt32(AMBIMSatisfeito4.Rows[0][0].ToString());
-            int mediaAMBIom = Convert.ToInt32(AMBISatisfeito1.Rows[0][0].ToString()), mediaAMBIom1 = Convert.ToInt32(AMBISatisfeito2.Rows[0][0].ToString()), mediaAMBIBom2 = Convert.ToInt32(AMBISatisfeito3.Rows[0][0].ToString()), mediaAMBIBom3 = Convert.ToInt32(AMBISatisfeito4.Rows[0][0].ToString());
-            int mediaAMBIinsat1 = Convert.ToInt32(AMBIInsatisfeito1.Rows[0][0].ToString()), mediaAMBIinsat2 = Convert.ToInt32(AMBIInsatisfeito2.Rows[0][0].ToString()), mediaAMBIinsat3 = Convert.ToInt32(AMBIInsatisfeito3.Rows[0][0].ToString());
-            int mediaAMBIinsat4 = Convert.ToInt32(AMBIMInsatisfeito1.Rows[0][0].ToString()), mediaAMBIinsat5 = Convert.ToInt32(AMBIMInsatisfeito2.Rows[0][0].ToString()), mediaAMBIinsat6 = Convert.ToInt32(AMBIMInsatisfeito3.Rows[0][0].ToString()), mediaAMBIinsat7 = Convert.ToInt32(AMBIMInsatisfeito4.Rows[0][0].ToString());
+            float mediaAMBIsat1 = Convert.ToInt32(AMBIEncantado1.Rows[0][0].ToString()), mediaAMBIsat2 = Convert.ToInt32(AMBIEncantado2.Rows[0][0].ToString()), mediaAMBIsat3 = Convert.ToInt32(AMBIEncantado3.Rows[0][0].ToString());
+            float mediaAMBIsat4 = Convert.ToInt32(AMBIMSatisfeito1.Rows[0][0].ToString()), mediaAMBIsat5 = Convert.ToInt32(AMBIMSatisfeito2.Rows[0][0].ToString()), mediaAMBIsat6 = Convert.ToInt32(AMBIMSatisfeito3.Rows[0][0].ToString()), mediaAMBIsat7 = Convert.ToInt32(AMBIMSatisfeito4.Rows[0][0].ToString());
+            float mediaAMBIom = Convert.ToInt32(AMBISatisfeito1.Rows[0][0].ToString()), mediaAMBIom1 = Convert.ToInt32(AMBISatisfeito2.Rows[0][0].ToString()), mediaAMBIBom2 = Convert.ToInt32(AMBISatisfeito3.Rows[0][0].ToString()), mediaAMBIBom3 = Convert.ToInt32(AMBISatisfeito4.Rows[0][0].ToString());
+            float mediaAMBIinsat1 = Convert.ToInt32(AMBIInsatisfeito1.Rows[0][0].ToString()), mediaAMBIinsat2 = Convert.ToInt32(AMBIInsatisfeito2.Rows[0][0].ToString()), mediaAMBIinsat3 = Convert.ToInt32(AMBIInsatisfeito3.Rows[0][0].ToString());
+            float mediaAMBIinsat4 = Convert.ToInt32(AMBIMInsatisfeito1.Rows[0][0].ToString()), mediaAMBIinsat5 = Convert.ToInt32(AMBIMInsatisfeito2.Rows[0][0].ToString()), mediaAMBIinsat6 = Convert.ToInt32(AMBIMInsatisfeito3.Rows[0][0].ToString()), mediaAMBIinsat7 = Convert.ToInt32(AMBIMInsatisfeito4.Rows[0][0].ToString());
             lblAMBImediaS.Text = (mediaAMBIsat1 + mediaAMBIsat2 + mediaAMBIsat3 + mediaAMBIsat4 + mediaAMBIsat5 + + mediaAMBIsat7 / 4).ToString();
             lblAMBImediaOM.Text = (mediaAMBIom + mediaAMBIom1 + mediaAMBIBom2 + mediaAMBIBom3 / 4).ToString();
             lblAMBImediaINS.Text = (mediaAMBIinsat1 + mediaAMBIinsat2 + mediaAMBIinsat3 + mediaAMBIinsat4 + mediaAMBIinsat5 + mediaAMBIinsat6 + mediaAMBIinsat7 / 4).ToString();
@@ -254,11 +254,11 @@ namespace PSCE
             DataTable INFMInsatisfeito1 = bd.lista("SELECT count(*) FROM `fpa` WHERE IMQ1 = 1 ");
             lblINFmins1.Text = INFMInsatisfeito1.Rows[0][0].ToString();
             //Media
-            int mediaINFsat1 = Convert.ToInt32(INFEncantado1.Rows[0][0].ToString());
-            int mediaINFsat2 = Convert.ToInt32(INFMSatisfeito1.Rows[0][0].ToString());
-            int mediaINFom = Convert.ToInt32(INFSatisfeito1.Rows[0][0].ToString());
-            int mediaINFinsat1 = Convert.ToInt32(INFInsatisfeito1.Rows[0][0].ToString());
-            int mediaINFinsat2 = Convert.ToInt32(INFMInsatisfeito1.Rows[0][0].ToString());
+            float mediaINFsat1 = Convert.ToInt32(INFEncantado1.Rows[0][0].ToString());
+            float mediaINFsat2 = Convert.ToInt32(INFMSatisfeito1.Rows[0][0].ToString());
+            float mediaINFom = Convert.ToInt32(INFSatisfeito1.Rows[0][0].ToString());
+            float mediaINFinsat1 = Convert.ToInt32(INFInsatisfeito1.Rows[0][0].ToString());
+            float mediaINFinsat2 = Convert.ToInt32(INFMInsatisfeito1.Rows[0][0].ToString());
             lblINFmediaS.Text = (mediaINFsat1 + mediaINFsat2 ).ToString();
             lblINFmediaOM.Text = (mediaINFom).ToString();
             lblINFmediaINS.Text = (mediaINFinsat1 + mediaINFinsat2 ).ToString();
