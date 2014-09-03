@@ -64,6 +64,7 @@
     <Content Include="AvaliacaoAtendimento.aspx" />
     <Content Include="CadastroUsuario.aspx" />
     <Content Include="COMCOF.aspx" />
+    <Content Include="COMCONS.aspx" />
     <Content Include="COMUNI.aspx" />
     <Content Include="feedbackaocliente.aspx" />
     <Content Include="FeedbackCOF.aspx" />
@@ -162,6 +163,13 @@
     </Compile>
     <Compile Include="COMCOF.aspx.designer.cs">
       <DependentUpon>COMCOF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COMCONS.aspx.cs">
+      <DependentUpon>COMCONS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COMCONS.aspx.designer.cs">
+      <DependentUpon>COMCONS.aspx</DependentUpon>
     </Compile>
     <Compile Include="COMEXAME.aspx.cs">
       <DependentUpon>COMEXAME.aspx</DependentUpon>
