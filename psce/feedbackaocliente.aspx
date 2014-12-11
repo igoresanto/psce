@@ -12,8 +12,16 @@
         <asp:ListItem Value="1">Respondida</asp:ListItem>
     </asp:DropDownList><asp:Button ID="Button1" runat="server" Text="Filtrar" OnClick="Button1_Click" />
     <br />Cof
-    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
+    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%" AutoGenerateColumns="False">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+        <Columns>
+            <asp:BoundField DataField="CÓDIGO" HeaderText="CÓDIGO" />
+            <asp:BoundField DataField="NOME DO PACIENTE" HeaderText="NOME DO PACIENTE" />
+            <asp:BoundField DataField="DATA DE REGISTRO DA RECLAMAÇÃO" HeaderText="DATA DE REGISTRO DA RECLAMAÇÃO" />
+            <asp:BoundField DataField="SETOR" HeaderText="SETOR" />
+            <asp:BoundField DataField="SITUAÇÃO" HeaderText="SITUAÇÃO" />
+            <asp:ButtonField HeaderText="VIZUALIZAR" Text="Vizualizar" />
+        </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
         <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

@@ -7,6 +7,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <center>
     <asp:Button ID="Button4" runat="server" Text="GRÁFICO" OnClick="Button4_Click" />
-    <asp:Button ID="Button5" runat="server" Text="RELATOS" /><br />
+    <!--<asp:Button ID="Button5" runat="server" Text="RELATOS" /><br />-->
     <asp:Button ID="Button6" runat="server" Text="VOLTAR" OnClick="Button6_Click" /></center>
 </asp:Content>

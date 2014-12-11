@@ -75,6 +75,7 @@
     <Content Include="resultadopesquisa.aspx" />
     <Content Include="SQL\PSCE.mwb" />
     <Content Include="SQL\PSCE.mwb.bak" />
+    <None Include="Properties\PublishProfiles\psce.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

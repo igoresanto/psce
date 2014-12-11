@@ -32,6 +32,10 @@ namespace PSCE
 
         }
 
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AvaliacaoAtendimento.aspx");
+        }
         //------  Multipla Escolha -------//
         int Q1()
         {

@@ -62,6 +62,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <asp:Button ID="BtSalvar" runat="server" Text="Salvar" OnClick="BtSalvar_Click" />
+    <asp:Button ID="Button6" runat="server" Text="Voltar" OnClick="Button6_Click" />
 <table width="846" cellpadding="0" cellspacing="0" style="background-color:white;">
   <tr>
             <td class="auto-style2"  style="text-align:center;background-color:rgb(0,125,125);">

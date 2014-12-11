@@ -191,7 +191,7 @@
                     
                 </tr>
                 <tr>
-                <td>Tempo de espera para o atendimento médico</td>
+                <td>Tempo de espera</td>
                 <td><asp:RadioButton ID="Q11R5" GroupName="Q11" runat="server" />Encantado</td>
                 <td><asp:RadioButton ID="Q11R4" GroupName="Q11" runat="server" />Muito Satisfeito</td>
                 <td><asp:RadioButton ID="Q11R3" GroupName="Q11" runat="server" />Satisfeito</td>
